@@ -1,0 +1,18 @@
+{
+  "id": "L1-05",
+  "tier": "L1",
+  "nl_prompt": "What is the total number of products in our catalog?",
+  "gold_sql": "SELECT COUNT(*) as product_count FROM products",
+  "gold_result": {
+    "rows": [
+      {
+        "product_count": 500
+      }
+    ],
+    "columns": [
+      "product_count"
+    ]
+  },
+  "primary_error_class": "",
+  "error_note": ""
+}

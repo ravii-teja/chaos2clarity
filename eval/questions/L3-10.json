@@ -1,0 +1,20 @@
+{
+  "id": "L3-10",
+  "tier": "L3",
+  "nl_prompt": "Which logistics carrier has the worst on-time rate for top revenue customers?",
+  "gold_sql": "WITH top_customers AS (SELECT c.id FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.id ORDER BY SUM(o.line_value) DESC LIMIT 100) SELECT ld.carrier_name, ROUND(100.0 * COUNT(CASE WHEN ld.status_code = 4 THEN 1 END) / COUNT(*), 2) as ontime_rate FROM logistics_deliveries ld JOIN orders o ON ld.shipping_ref = o.shipping_id WHERE o.customer_id IN (SELECT id FROM top_customers) GROUP BY ld.carrier_name ORDER BY ontime_rate ASC LIMIT 1",
+  "gold_result": {
+    "rows": [
+      {
+        "carrier_name": "Jordan-Carter Logistics",
+        "ontime_rate": 82.27
+      }
+    ],
+    "columns": [
+      "carrier_name",
+      "ontime_rate"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

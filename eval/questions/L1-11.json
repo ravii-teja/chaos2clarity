@@ -1,0 +1,18 @@
+{
+  "id": "L1-11",
+  "tier": "L1",
+  "nl_prompt": "How many new customers signed up this year?",
+  "gold_sql": "SELECT COUNT(*) as new_customers FROM customers WHERE EXTRACT(YEAR FROM created_at) = EXTRACT(YEAR FROM CURRENT_DATE)",
+  "gold_result": {
+    "rows": [
+      {
+        "new_customers": 60
+      }
+    ],
+    "columns": [
+      "new_customers"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

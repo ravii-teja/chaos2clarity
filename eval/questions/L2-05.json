@@ -1,0 +1,15 @@
+{
+  "id": "L2-05",
+  "tier": "L2",
+  "nl_prompt": "Which product categories have more than 10 percent return rate?",
+  "gold_sql": "SELECT p.category, ROUND(100.0 * COUNT(CASE WHEN o.status='returned' THEN 1 END) / COUNT(*), 2) as return_rate FROM orders o JOIN products p ON o.product_id = p.id GROUP BY p.category HAVING ROUND(100.0 * COUNT(CASE WHEN o.status='returned' THEN 1 END) / COUNT(*), 2) > 10",
+  "gold_result": {
+    "rows": [],
+    "columns": [
+      "category",
+      "return_rate"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

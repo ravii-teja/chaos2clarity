@@ -1,0 +1,18 @@
+{
+  "id": "L1-01",
+  "tier": "L1",
+  "nl_prompt": "What was total gross revenue last quarter?",
+  "gold_sql": "SELECT SUM(line_value) as total_revenue FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL 90 DAY",
+  "gold_result": {
+    "rows": [
+      {
+        "total_revenue": "2917350.04"
+      }
+    ],
+    "columns": [
+      "total_revenue"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

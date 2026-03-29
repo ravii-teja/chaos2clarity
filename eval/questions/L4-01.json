@@ -1,0 +1,56 @@
+{
+  "id": "L4-01",
+  "tier": "L4",
+  "nl_prompt": "Summarize delivery complaint themes for top 10 revenue customers.",
+  "gold_sql": "SELECT c.name, SUM(o.line_value) as rev FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.name ORDER BY rev DESC LIMIT 10",
+  "gold_result": {
+    "rows": [
+      {
+        "name": "Michael Powell",
+        "rev": "77696.02"
+      },
+      {
+        "name": "Brian Martin",
+        "rev": "72643.50"
+      },
+      {
+        "name": "Samantha Robertson",
+        "rev": "69690.10"
+      },
+      {
+        "name": "Matthew Wright",
+        "rev": "64595.14"
+      },
+      {
+        "name": "Julie Roberts",
+        "rev": "60191.06"
+      },
+      {
+        "name": "Todd Gregory",
+        "rev": "58988.20"
+      },
+      {
+        "name": "Mercedes Barnes",
+        "rev": "56507.82"
+      },
+      {
+        "name": "Angie Caldwell",
+        "rev": "56102.25"
+      },
+      {
+        "name": "Laura Davis",
+        "rev": "55858.51"
+      },
+      {
+        "name": "Tony Leonard",
+        "rev": "54836.10"
+      }
+    ],
+    "columns": [
+      "name",
+      "rev"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

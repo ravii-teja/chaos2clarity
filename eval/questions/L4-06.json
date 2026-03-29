@@ -1,0 +1,36 @@
+{
+  "id": "L4-06",
+  "tier": "L4",
+  "nl_prompt": "Which sales reps have customers with most positive feedback?",
+  "gold_sql": "SELECT r.rep_name, COUNT(o.id) as c FROM sales_reps r JOIN orders o ON r.id = o.sales_rep_id WHERE o.status = 'completed' GROUP BY r.rep_name ORDER BY c DESC LIMIT 5",
+  "gold_result": {
+    "rows": [
+      {
+        "rep_name": "Tracy Garcia",
+        "c": 256
+      },
+      {
+        "rep_name": "Gary Moore",
+        "c": 250
+      },
+      {
+        "rep_name": "Matthew Berg",
+        "c": 235
+      },
+      {
+        "rep_name": "Ruth Walker",
+        "c": 229
+      },
+      {
+        "rep_name": "David Miller",
+        "c": 227
+      }
+    ],
+    "columns": [
+      "rep_name",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

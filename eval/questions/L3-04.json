@@ -1,0 +1,18 @@
+{
+  "id": "L3-04",
+  "tier": "L3",
+  "nl_prompt": "What is the delivery success rate for Enterprise segment customers?",
+  "gold_sql": "SELECT ROUND(100.0 * COUNT(CASE WHEN ld.status_code = 4 THEN 1 END) / COUNT(*), 2) as success_rate FROM sf_accounts sa JOIN customers c ON c.email = sa.email_address JOIN orders o ON c.id = o.customer_id JOIN logistics_deliveries ld ON o.shipping_id = ld.shipping_ref WHERE sa.sf_segment = 'Enterprise'",
+  "gold_result": {
+    "rows": [
+      {
+        "success_rate": 86.53
+      }
+    ],
+    "columns": [
+      "success_rate"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

@@ -1,0 +1,375 @@
+{
+  "entities": [
+    {
+      "name": "Customer",
+      "aliases": [
+        "client",
+        "account",
+        "buyer",
+        "purchaser"
+      ],
+      "source_tables": [
+        "customers",
+        "sf_accounts"
+      ],
+      "key_column": "id",
+      "confidence": 1.0,
+      "pii_flag": true,
+      "type": "Entity"
+    },
+    {
+      "name": "Order",
+      "aliases": [
+        "purchase",
+        "transaction",
+        "sale"
+      ],
+      "source_tables": [
+        "orders"
+      ],
+      "key_column": "id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "Product",
+      "aliases": [
+        "item",
+        "SKU",
+        "merchandise",
+        "goods"
+      ],
+      "source_tables": [
+        "products"
+      ],
+      "key_column": "id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "OrderItem",
+      "aliases": [
+        "line item",
+        "order line"
+      ],
+      "source_tables": [
+        "order_items"
+      ],
+      "key_column": "id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "SalesRep",
+      "aliases": [
+        "salesperson",
+        "sales representative",
+        "rep",
+        "account executive"
+      ],
+      "source_tables": [
+        "sales_reps"
+      ],
+      "key_column": "id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "Return",
+      "aliases": [
+        "refund",
+        "return request"
+      ],
+      "source_tables": [
+        "returns"
+      ],
+      "key_column": "id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "Deal",
+      "aliases": [
+        "opportunity",
+        "CRM deal",
+        "pipeline deal"
+      ],
+      "source_tables": [
+        "sf_opportunities"
+      ],
+      "key_column": "opp_id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "SalesforceAccount",
+      "aliases": [
+        "SF account",
+        "CRM account"
+      ],
+      "source_tables": [
+        "sf_accounts"
+      ],
+      "key_column": "account_id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    },
+    {
+      "name": "Delivery",
+      "aliases": [
+        "shipment",
+        "logistics event",
+        "shipping"
+      ],
+      "source_tables": [
+        "logistics_deliveries"
+      ],
+      "key_column": "tracking_id",
+      "confidence": 1.0,
+      "pii_flag": false,
+      "type": "Entity"
+    }
+  ],
+  "metrics": [
+    {
+      "name": "Revenue",
+      "aliases": [
+        "gross revenue",
+        "sales",
+        "total revenue",
+        "income",
+        "line value"
+      ],
+      "formula": "SUM(orders.line_value)",
+      "unit": "USD",
+      "source_columns": [
+        "orders.line_value"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "OrderCount",
+      "aliases": [
+        "number of orders",
+        "order volume",
+        "total orders"
+      ],
+      "formula": "COUNT(orders.id)",
+      "unit": "count",
+      "source_columns": [
+        "orders.id"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "AverageOrderValue",
+      "aliases": [
+        "AOV",
+        "avg order value",
+        "average order size"
+      ],
+      "formula": "AVG(orders.line_value)",
+      "unit": "USD",
+      "source_columns": [
+        "orders.line_value"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "CustomerCount",
+      "aliases": [
+        "number of customers",
+        "unique customers"
+      ],
+      "formula": "COUNT(DISTINCT orders.customer_id)",
+      "unit": "count",
+      "source_columns": [
+        "orders.customer_id"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "ReturnRate",
+      "aliases": [
+        "return percentage",
+        "refund rate"
+      ],
+      "formula": "COUNT(CASE WHEN status=returned) / COUNT(*)",
+      "unit": "percentage",
+      "source_columns": [
+        "orders.status"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "DeliveryDelayDays",
+      "aliases": [
+        "shipping delay",
+        "late delivery days"
+      ],
+      "formula": "delivery_date - expected_date",
+      "unit": "days",
+      "source_columns": [
+        "logistics_deliveries.delivery_date",
+        "logistics_deliveries.expected_date"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "DealSize",
+      "aliases": [
+        "deal amount",
+        "opportunity value",
+        "deal value"
+      ],
+      "formula": "sf_opportunities.amount",
+      "unit": "USD",
+      "source_columns": [
+        "sf_opportunities.amount"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    },
+    {
+      "name": "COGS",
+      "aliases": [
+        "cost of goods sold",
+        "cost of sales"
+      ],
+      "formula": "SUM(products.cost_price * orders.quantity)",
+      "unit": "USD",
+      "source_columns": [
+        "products.cost_price",
+        "orders.quantity"
+      ],
+      "confidence": 1.0,
+      "type": "Metric"
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Order",
+      "to": "Customer",
+      "type": "PlacedBy",
+      "join_key": "orders.customer_id = customers.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "Order",
+      "to": "Product",
+      "type": "Contains",
+      "join_key": "orders.product_id = products.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "Order",
+      "to": "SalesRep",
+      "type": "ManagedBy",
+      "join_key": "orders.sales_rep_id = sales_reps.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "OrderItem",
+      "to": "Order",
+      "type": "BelongsTo",
+      "join_key": "order_items.order_id = orders.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "OrderItem",
+      "to": "Product",
+      "type": "References",
+      "join_key": "order_items.product_id = products.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "Return",
+      "to": "Order",
+      "type": "RefundsOrder",
+      "join_key": "returns.order_id = orders.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "Deal",
+      "to": "SalesforceAccount",
+      "type": "OwnedBy",
+      "join_key": "sf_opportunities.account_id = sf_accounts.account_id",
+      "confidence": 1.0
+    },
+    {
+      "from": "Customer",
+      "to": "SalesforceAccount",
+      "type": "SynonymousWith",
+      "join_key": "customers.email = sf_accounts.email_address",
+      "confidence": 0.85
+    },
+    {
+      "from": "Order",
+      "to": "Delivery",
+      "type": "ShippedVia",
+      "join_key": "orders.shipping_id = logistics_deliveries.shipping_ref",
+      "confidence": 0.8
+    },
+    {
+      "from": "Customer",
+      "to": "Deal",
+      "type": "HasOpportunity",
+      "join_key": "customers.email = sf_accounts.email_address AND sf_accounts.account_id = sf_opportunities.account_id",
+      "confidence": 0.75
+    },
+    {
+      "from": "Revenue",
+      "to": "Order",
+      "type": "DerivedFrom",
+      "join_key": "SUM(orders.line_value)",
+      "confidence": 1.0
+    },
+    {
+      "from": "Revenue",
+      "to": "Product",
+      "type": "SliceableBy",
+      "join_key": "orders.product_id = products.id",
+      "confidence": 1.0
+    },
+    {
+      "from": "Revenue",
+      "to": "Customer",
+      "type": "SliceableBy",
+      "join_key": "orders.customer_id = customers.id",
+      "confidence": 1.0
+    }
+  ],
+  "policies": [
+    {
+      "type": "pii",
+      "rule": "Mask email addresses in query output",
+      "scope": "customers.email, sf_accounts.email_address",
+      "priority": 1
+    },
+    {
+      "type": "access",
+      "rule": "All queries require authenticated user context",
+      "scope": "global",
+      "priority": 1
+    },
+    {
+      "type": "compute",
+      "rule": "Block full table scans exceeding 100,000 rows without WHERE clause",
+      "scope": "global",
+      "priority": 1
+    }
+  ]
+}

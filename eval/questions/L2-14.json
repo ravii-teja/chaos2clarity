@@ -1,0 +1,36 @@
+{
+  "id": "L2-14",
+  "tier": "L2",
+  "nl_prompt": "What is the average number of items per order by category?",
+  "gold_sql": "SELECT p.category, AVG(o.quantity) as avg_items FROM orders o JOIN products p ON o.product_id = p.id GROUP BY p.category",
+  "gold_result": {
+    "rows": [
+      {
+        "category": "Home",
+        "avg_items": 4.988489208633093
+      },
+      {
+        "category": "Electronics",
+        "avg_items": 5.0740375123395856
+      },
+      {
+        "category": "Sports",
+        "avg_items": 5.0085858585858585
+      },
+      {
+        "category": "Food",
+        "avg_items": 4.963977676306444
+      },
+      {
+        "category": "Clothing",
+        "avg_items": 4.9907120743034055
+      }
+    ],
+    "columns": [
+      "category",
+      "avg_items"
+    ]
+  },
+  "primary_error_class": "E3",
+  "error_note": ""
+}

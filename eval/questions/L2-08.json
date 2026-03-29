@@ -1,0 +1,68 @@
+{
+  "id": "L2-08",
+  "tier": "L2",
+  "nl_prompt": "What is the monthly revenue trend for the last 12 months?",
+  "gold_sql": "SELECT DATE_TRUNC('month', order_date) as month, SUM(line_value) as monthly_revenue FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL 365 DAY GROUP BY month ORDER BY month",
+  "gold_result": {
+    "rows": [
+      {
+        "month": "2025-03-01 00:00:00",
+        "monthly_revenue": "114678.75"
+      },
+      {
+        "month": "2025-04-01 00:00:00",
+        "monthly_revenue": "990725.81"
+      },
+      {
+        "month": "2025-05-01 00:00:00",
+        "monthly_revenue": "1039224.90"
+      },
+      {
+        "month": "2025-06-01 00:00:00",
+        "monthly_revenue": "1010242.54"
+      },
+      {
+        "month": "2025-07-01 00:00:00",
+        "monthly_revenue": "1061304.57"
+      },
+      {
+        "month": "2025-08-01 00:00:00",
+        "monthly_revenue": "1109442.31"
+      },
+      {
+        "month": "2025-09-01 00:00:00",
+        "monthly_revenue": "982114.23"
+      },
+      {
+        "month": "2025-10-01 00:00:00",
+        "monthly_revenue": "1092120.37"
+      },
+      {
+        "month": "2025-11-01 00:00:00",
+        "monthly_revenue": "1098199.30"
+      },
+      {
+        "month": "2025-12-01 00:00:00",
+        "monthly_revenue": "1091809.39"
+      },
+      {
+        "month": "2026-01-01 00:00:00",
+        "monthly_revenue": "1030514.14"
+      },
+      {
+        "month": "2026-02-01 00:00:00",
+        "monthly_revenue": "874074.30"
+      },
+      {
+        "month": "2026-03-01 00:00:00",
+        "monthly_revenue": "929144.28"
+      }
+    ],
+    "columns": [
+      "month",
+      "monthly_revenue"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

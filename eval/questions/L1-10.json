@@ -1,0 +1,20 @@
+{
+  "id": "L1-10",
+  "tier": "L1",
+  "nl_prompt": "What is the revenue for the top-selling product?",
+  "gold_sql": "SELECT p.name, SUM(o.line_value) as rev FROM orders o JOIN products p ON o.product_id = p.id GROUP BY p.name ORDER BY rev DESC LIMIT 1",
+  "gold_result": {
+    "rows": [
+      {
+        "name": "Polarized modular migration",
+        "rev": "235494.28"
+      }
+    ],
+    "columns": [
+      "name",
+      "rev"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

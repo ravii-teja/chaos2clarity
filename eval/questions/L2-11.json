@@ -1,0 +1,24 @@
+{
+  "id": "L2-11",
+  "tier": "L2",
+  "nl_prompt": "What is the revenue from completed orders versus pending orders?",
+  "gold_sql": "SELECT status, SUM(line_value) as revenue FROM orders WHERE status IN ('completed', 'pending') GROUP BY status",
+  "gold_result": {
+    "rows": [
+      {
+        "status": "pending",
+        "revenue": "2511104.20"
+      },
+      {
+        "status": "completed",
+        "revenue": "13639257.98"
+      }
+    ],
+    "columns": [
+      "status",
+      "revenue"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

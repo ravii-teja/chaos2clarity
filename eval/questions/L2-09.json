@@ -1,0 +1,333 @@
+{
+  "id": "L2-09",
+  "tier": "L2",
+  "nl_prompt": "Which products had zero orders in the last 60 days?",
+  "gold_sql": "SELECT p.name FROM products p WHERE p.id NOT IN (SELECT DISTINCT product_id FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL 60 DAY)",
+  "gold_result": {
+    "rows": [
+      {
+        "name": "Inverse next generation product"
+      },
+      {
+        "name": "Quality-focused hybrid interface"
+      },
+      {
+        "name": "Extended incremental framework"
+      },
+      {
+        "name": "Visionary radical methodology"
+      },
+      {
+        "name": "Cloned full-range adapter"
+      },
+      {
+        "name": "Focused 3rdgeneration pricing structure"
+      },
+      {
+        "name": "Configurable analyzing challenge"
+      },
+      {
+        "name": "Exclusive coherent implementation"
+      },
+      {
+        "name": "Synergized tangible success"
+      },
+      {
+        "name": "Face-to-face real-time implementation"
+      },
+      {
+        "name": "Cross-group context-sensitive parallelism"
+      },
+      {
+        "name": "Up-sized maximized function"
+      },
+      {
+        "name": "Down-sized uniform customer loyalty"
+      },
+      {
+        "name": "Sharable dedicated flexibility"
+      },
+      {
+        "name": "Polarized attitude-oriented hierarchy"
+      },
+      {
+        "name": "Phased leadingedge interface"
+      },
+      {
+        "name": "Profit-focused reciprocal support"
+      },
+      {
+        "name": "Multi-tiered interactive artificial intelligence"
+      },
+      {
+        "name": "Virtual exuding policy"
+      },
+      {
+        "name": "Realigned real-time matrices"
+      },
+      {
+        "name": "Open-architected intangible infrastructure"
+      },
+      {
+        "name": "Pre-emptive scalable solution"
+      },
+      {
+        "name": "Stand-alone client-server firmware"
+      },
+      {
+        "name": "Robust optimal protocol"
+      },
+      {
+        "name": "Triple-buffered optimizing artificial intelligence"
+      },
+      {
+        "name": "Down-sized interactive extranet"
+      },
+      {
+        "name": "Monitored client-server flexibility"
+      },
+      {
+        "name": "Enterprise-wide tertiary challenge"
+      },
+      {
+        "name": "Fundamental incremental intranet"
+      },
+      {
+        "name": "Adaptive homogeneous portal"
+      },
+      {
+        "name": "Programmable well-modulated flexibility"
+      },
+      {
+        "name": "Devolved 4thgeneration portal"
+      },
+      {
+        "name": "Synergized stable leverage"
+      },
+      {
+        "name": "Profound incremental protocol"
+      },
+      {
+        "name": "Multi-lateral 6thgeneration workforce"
+      },
+      {
+        "name": "User-centric fresh-thinking service-desk"
+      },
+      {
+        "name": "Optimized methodical protocol"
+      },
+      {
+        "name": "Cross-group exuding service-desk"
+      },
+      {
+        "name": "Fully-configurable didactic concept"
+      },
+      {
+        "name": "Grass-roots directional success"
+      },
+      {
+        "name": "Up-sized mobile array"
+      },
+      {
+        "name": "User-centric uniform implementation"
+      },
+      {
+        "name": "Focused directional firmware"
+      },
+      {
+        "name": "Visionary high-level website"
+      },
+      {
+        "name": "Profit-focused system-worthy capability"
+      },
+      {
+        "name": "Expanded upward-trending workforce"
+      },
+      {
+        "name": "Mandatory interactive service-desk"
+      },
+      {
+        "name": "Object-based hybrid archive"
+      },
+      {
+        "name": "Progressive upward-trending forecast"
+      },
+      {
+        "name": "Versatile optimal workforce"
+      },
+      {
+        "name": "Re-engineered client-driven intranet"
+      },
+      {
+        "name": "Up-sized impactful encryption"
+      },
+      {
+        "name": "Object-based mobile framework"
+      },
+      {
+        "name": "Streamlined value-added implementation"
+      },
+      {
+        "name": "Streamlined leadingedge hub"
+      },
+      {
+        "name": "Configurable bottom-line matrix"
+      },
+      {
+        "name": "Universal solution-oriented capability"
+      },
+      {
+        "name": "Intuitive bottom-line analyzer"
+      },
+      {
+        "name": "De-engineered object-oriented database"
+      },
+      {
+        "name": "Automated attitude-oriented capability"
+      },
+      {
+        "name": "Pre-emptive system-worthy functionalities"
+      },
+      {
+        "name": "Programmable heuristic portal"
+      },
+      {
+        "name": "Compatible neutral extranet"
+      },
+      {
+        "name": "Public-key demand-driven archive"
+      },
+      {
+        "name": "Sharable tangible project"
+      },
+      {
+        "name": "Ergonomic transitional hub"
+      },
+      {
+        "name": "Re-contextualized stable project"
+      },
+      {
+        "name": "Robust dynamic archive"
+      },
+      {
+        "name": "Open-source asymmetric groupware"
+      },
+      {
+        "name": "Sharable background hierarchy"
+      },
+      {
+        "name": "Pre-emptive bandwidth-monitored moderator"
+      },
+      {
+        "name": "User-centric systematic toolset"
+      },
+      {
+        "name": "User-centric encompassing application"
+      },
+      {
+        "name": "Synergistic real-time instruction set"
+      },
+      {
+        "name": "Total bottom-line initiative"
+      },
+      {
+        "name": "Advanced reciprocal core"
+      },
+      {
+        "name": "User-friendly 24hour structure"
+      },
+      {
+        "name": "User-friendly grid-enabled encryption"
+      },
+      {
+        "name": "Synergized real-time analyzer"
+      },
+      {
+        "name": "Multi-layered bifurcated Graphical User Interface"
+      },
+      {
+        "name": "Innovative mission-critical frame"
+      },
+      {
+        "name": "Fundamental didactic ability"
+      },
+      {
+        "name": "Seamless logistical groupware"
+      },
+      {
+        "name": "Enterprise-wide impactful help-desk"
+      },
+      {
+        "name": "Pre-emptive dedicated artificial intelligence"
+      },
+      {
+        "name": "Open-source bottom-line matrix"
+      },
+      {
+        "name": "Enterprise-wide national workforce"
+      },
+      {
+        "name": "Switchable leadingedge complexity"
+      },
+      {
+        "name": "Inverse web-enabled task-force"
+      },
+      {
+        "name": "Vision-oriented impactful middleware"
+      },
+      {
+        "name": "Up-sized user-facing info-mediaries"
+      },
+      {
+        "name": "De-engineered bifurcated benchmark"
+      },
+      {
+        "name": "Optimized radical support"
+      },
+      {
+        "name": "Fully-configurable regional collaboration"
+      },
+      {
+        "name": "Profit-focused reciprocal contingency"
+      },
+      {
+        "name": "Sharable coherent emulation"
+      },
+      {
+        "name": "Decentralized clear-thinking initiative"
+      },
+      {
+        "name": "Progressive fault-tolerant standardization"
+      },
+      {
+        "name": "Grass-roots grid-enabled structure"
+      },
+      {
+        "name": "Multi-layered disintermediate projection"
+      },
+      {
+        "name": "Distributed 6thgeneration capacity"
+      },
+      {
+        "name": "Universal eco-centric task-force"
+      },
+      {
+        "name": "Object-based modular software"
+      },
+      {
+        "name": "Down-sized leadingedge system engine"
+      },
+      {
+        "name": "Vision-oriented human-resource initiative"
+      },
+      {
+        "name": "Implemented tertiary flexibility"
+      }
+    ],
+    "columns": [
+      "name"
+    ]
+  },
+  "primary_error_class": "E3",
+  "error_note": ""
+}

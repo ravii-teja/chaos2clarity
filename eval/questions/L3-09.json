@@ -1,0 +1,18 @@
+{
+  "id": "L3-09",
+  "tier": "L3",
+  "nl_prompt": "What is the average time from CRM deal close to first order?",
+  "gold_sql": "SELECT AVG(o.min_order_date - CAST(so.close_date AS DATE)) as avg_days FROM sf_opportunities so JOIN sf_accounts sa ON so.account_id = sa.account_id JOIN customers c ON c.email = sa.email_address JOIN (SELECT customer_id, MIN(order_date) as min_order_date FROM orders GROUP BY customer_id) o ON c.id = o.customer_id WHERE so.stage = 'Closed Won'",
+  "gold_result": {
+    "rows": [
+      {
+        "avg_days": -656.6675749318802
+      }
+    ],
+    "columns": [
+      "avg_days"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

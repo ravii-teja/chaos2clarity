@@ -1,0 +1,18 @@
+{
+  "id": "L3-05",
+  "tier": "L3",
+  "nl_prompt": "Total revenue from customers whose CRM deals closed successfully?",
+  "gold_sql": "SELECT SUM(o.line_value) as total_revenue FROM orders o JOIN customers c ON o.customer_id = c.id JOIN sf_accounts sa ON c.email = sa.email_address JOIN sf_opportunities so ON sa.account_id = so.account_id WHERE so.stage = 'Closed Won'",
+  "gold_result": {
+    "rows": [
+      {
+        "total_revenue": "9267393.50"
+      }
+    ],
+    "columns": [
+      "total_revenue"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

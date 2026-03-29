@@ -1,0 +1,18 @@
+{
+  "id": "L1-08",
+  "tier": "L1",
+  "nl_prompt": "What is our total revenue for Electronics products?",
+  "gold_sql": "SELECT SUM(o.line_value) as electronics_revenue FROM orders o JOIN products p ON o.product_id = p.id WHERE p.category = 'Electronics'",
+  "gold_result": {
+    "rows": [
+      {
+        "electronics_revenue": "4789856.42"
+      }
+    ],
+    "columns": [
+      "electronics_revenue"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L1-09",
+  "tier": "L1",
+  "nl_prompt": "How many orders shipped in the last 30 days?",
+  "gold_sql": "SELECT COUNT(*) as shipped_count FROM orders WHERE ship_date >= CURRENT_DATE - INTERVAL 30 DAY AND ship_date IS NOT NULL",
+  "gold_result": {
+    "rows": [
+      {
+        "shipped_count": 409
+      }
+    ],
+    "columns": [
+      "shipped_count"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

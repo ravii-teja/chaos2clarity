@@ -1,0 +1,18 @@
+{
+  "id": "L1-13",
+  "tier": "L1",
+  "nl_prompt": "What percentage of orders were returned?",
+  "gold_sql": "SELECT ROUND(100.0 * COUNT(CASE WHEN status='returned' THEN 1 END) / COUNT(*), 2) as return_pct FROM orders",
+  "gold_result": {
+    "rows": [
+      {
+        "return_pct": 7.09
+      }
+    ],
+    "columns": [
+      "return_pct"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L1-06",
+  "tier": "L1",
+  "nl_prompt": "What was our highest single-order revenue ever?",
+  "gold_sql": "SELECT MAX(line_value) as max_revenue FROM orders",
+  "gold_result": {
+    "rows": [
+      {
+        "max_revenue": "12961.26"
+      }
+    ],
+    "columns": [
+      "max_revenue"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

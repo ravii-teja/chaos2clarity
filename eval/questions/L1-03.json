@@ -1,0 +1,18 @@
+{
+  "id": "L1-03",
+  "tier": "L1",
+  "nl_prompt": "What is our average order value?",
+  "gold_sql": "SELECT AVG(line_value) as avg_order_value FROM orders",
+  "gold_result": {
+    "rows": [
+      {
+        "avg_order_value": 2516.108569
+      }
+    ],
+    "columns": [
+      "avg_order_value"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

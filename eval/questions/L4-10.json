@@ -1,0 +1,96 @@
+{
+  "id": "L4-10",
+  "tier": "L4",
+  "nl_prompt": "Find orders where complaints mention product defects.",
+  "gold_sql": "SELECT o.id, p.name FROM orders o JOIN products p ON o.product_id = p.id WHERE o.status = 'returned' LIMIT 20",
+  "gold_result": {
+    "rows": [
+      {
+        "id": 21,
+        "name": "Front-line mission-critical matrix"
+      },
+      {
+        "id": 39,
+        "name": "Decentralized clear-thinking initiative"
+      },
+      {
+        "id": 41,
+        "name": "Devolved hybrid instruction set"
+      },
+      {
+        "id": 56,
+        "name": "Automated even-keeled core"
+      },
+      {
+        "id": 67,
+        "name": "Horizontal client-server synergy"
+      },
+      {
+        "id": 79,
+        "name": "Robust bandwidth-monitored Internet solution"
+      },
+      {
+        "id": 91,
+        "name": "Optimized tangible monitoring"
+      },
+      {
+        "id": 95,
+        "name": "Visionary clear-thinking groupware"
+      },
+      {
+        "id": 108,
+        "name": "Synergized real-time analyzer"
+      },
+      {
+        "id": 121,
+        "name": "Digitized homogeneous open system"
+      },
+      {
+        "id": 127,
+        "name": "Face-to-face modular software"
+      },
+      {
+        "id": 133,
+        "name": "Multi-lateral value-added time-frame"
+      },
+      {
+        "id": 134,
+        "name": "Cross-platform optimizing contingency"
+      },
+      {
+        "id": 188,
+        "name": "Virtual bottom-line function"
+      },
+      {
+        "id": 214,
+        "name": "Sharable well-modulated solution"
+      },
+      {
+        "id": 241,
+        "name": "Advanced interactive service-desk"
+      },
+      {
+        "id": 252,
+        "name": "Intuitive bottom-line analyzer"
+      },
+      {
+        "id": 253,
+        "name": "Automated attitude-oriented capability"
+      },
+      {
+        "id": 293,
+        "name": "Automated even-keeled core"
+      },
+      {
+        "id": 307,
+        "name": "Phased hybrid hub"
+      }
+    ],
+    "columns": [
+      "id",
+      "name"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

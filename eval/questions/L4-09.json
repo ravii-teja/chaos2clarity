@@ -1,0 +1,44 @@
+{
+  "id": "L4-09",
+  "tier": "L4",
+  "nl_prompt": "What do churned customers say were top reasons for leaving?",
+  "gold_sql": "SELECT reason, COUNT(*) as c FROM returns GROUP BY reason ORDER BY c DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "reason": "Better price elsewhere",
+        "c": 114
+      },
+      {
+        "reason": "Wrong item shipped",
+        "c": 110
+      },
+      {
+        "reason": "Product not as described",
+        "c": 104
+      },
+      {
+        "reason": "Changed mind",
+        "c": 104
+      },
+      {
+        "reason": "Defective product",
+        "c": 101
+      },
+      {
+        "reason": "Arrived too late",
+        "c": 89
+      },
+      {
+        "reason": "Damaged in shipping",
+        "c": 87
+      }
+    ],
+    "columns": [
+      "reason",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

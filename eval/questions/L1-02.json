@@ -1,0 +1,18 @@
+{
+  "id": "L1-02",
+  "tier": "L1",
+  "nl_prompt": "How many orders were placed this year?",
+  "gold_sql": "SELECT COUNT(*) as order_count FROM orders WHERE EXTRACT(YEAR FROM order_date) = EXTRACT(YEAR FROM CURRENT_DATE)",
+  "gold_result": {
+    "rows": [
+      {
+        "order_count": 1141
+      }
+    ],
+    "columns": [
+      "order_count"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L2-13",
+  "tier": "L2",
+  "nl_prompt": "What is the total discount given across all orders?",
+  "gold_sql": "SELECT SUM(line_value * discount_pct / 100.0) as total_discount FROM orders WHERE discount_pct > 0",
+  "gold_result": {
+    "rows": [
+      {
+        "total_discount": 1344836.7455000032
+      }
+    ],
+    "columns": [
+      "total_discount"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

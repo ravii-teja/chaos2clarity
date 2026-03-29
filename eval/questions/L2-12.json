@@ -1,0 +1,20 @@
+{
+  "id": "L2-12",
+  "tier": "L2",
+  "nl_prompt": "Which product has the highest total quantity sold?",
+  "gold_sql": "SELECT p.name, SUM(o.quantity) as total_qty FROM orders o JOIN products p ON o.product_id = p.id GROUP BY p.name ORDER BY total_qty DESC LIMIT 1",
+  "gold_result": {
+    "rows": [
+      {
+        "name": "De-engineered explicit analyzer",
+        "total_qty": 192
+      }
+    ],
+    "columns": [
+      "name",
+      "total_qty"
+    ]
+  },
+  "primary_error_class": "E3",
+  "error_note": ""
+}

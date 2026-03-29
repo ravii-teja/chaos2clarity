@@ -1,0 +1,67 @@
+{
+  "id": "L3-03",
+  "tier": "L3",
+  "nl_prompt": "Which of our top 10 revenue customers have an open CRM opportunity?",
+  "gold_sql": "WITH top10 AS (SELECT c.id, c.name, c.email, SUM(o.line_value) as rev FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.id, c.name, c.email ORDER BY rev DESC LIMIT 10) SELECT t.name, so.deal_name, so.stage FROM top10 t JOIN sf_accounts sa ON t.email = sa.email_address JOIN sf_opportunities so ON sa.account_id = so.account_id WHERE so.stage NOT IN ('Closed Won', 'Closed Lost')",
+  "gold_result": {
+    "rows": [
+      {
+        "name": "Mercedes Barnes",
+        "deal_name": "Streamline Revolutionary Markets",
+        "stage": "Prospecting"
+      },
+      {
+        "name": "Mercedes Barnes",
+        "deal_name": "Strategize Proactive Solutions",
+        "stage": "Prospecting"
+      },
+      {
+        "name": "Angie Caldwell",
+        "deal_name": "Matrix Dynamic Eyeballs",
+        "stage": "Proposal"
+      },
+      {
+        "name": "Angie Caldwell",
+        "deal_name": "Generate Real-Time Web Services",
+        "stage": "Qualification"
+      },
+      {
+        "name": "Amanda Nielsen",
+        "deal_name": "Deploy Transparent Interfaces",
+        "stage": "Proposal"
+      },
+      {
+        "name": "Raymond Oconnor",
+        "deal_name": "Re-Contextualize Virtual Platforms",
+        "stage": "Qualification"
+      },
+      {
+        "name": "Tony Leonard",
+        "deal_name": "Scale Seamless E-Services",
+        "stage": "Negotiation"
+      },
+      {
+        "name": "Samantha Robertson",
+        "deal_name": "Optimize Front-End Methodologies",
+        "stage": "Qualification"
+      },
+      {
+        "name": "Dana Santiago",
+        "deal_name": "Target Strategic Supply-Chains",
+        "stage": "Qualification"
+      },
+      {
+        "name": "Julie Roberts",
+        "deal_name": "Streamline Viral Methodologies",
+        "stage": "Prospecting"
+      }
+    ],
+    "columns": [
+      "name",
+      "deal_name",
+      "stage"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

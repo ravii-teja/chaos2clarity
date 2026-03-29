@@ -1,0 +1,36 @@
+{
+  "id": "L3-08",
+  "tier": "L3",
+  "nl_prompt": "Which product categories have delivery complaints from high-value CRM accounts?",
+  "gold_sql": "SELECT p.category, COUNT(*) as complaint_count FROM products p JOIN orders o ON p.id = o.product_id JOIN logistics_deliveries ld ON o.shipping_id = ld.shipping_ref JOIN customers c ON o.customer_id = c.id JOIN sf_accounts sa ON c.email = sa.email_address WHERE ld.status_code IN (5, 6) AND sa.annual_revenue > 1000000 GROUP BY p.category ORDER BY complaint_count DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "category": "Home",
+        "complaint_count": 123
+      },
+      {
+        "category": "Electronics",
+        "complaint_count": 114
+      },
+      {
+        "category": "Clothing",
+        "complaint_count": 110
+      },
+      {
+        "category": "Sports",
+        "complaint_count": 107
+      },
+      {
+        "category": "Food",
+        "complaint_count": 106
+      }
+    ],
+    "columns": [
+      "category",
+      "complaint_count"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L1-15",
+  "tier": "L1",
+  "nl_prompt": "What was our total revenue last year?",
+  "gold_sql": "SELECT SUM(line_value) as total_revenue FROM orders WHERE EXTRACT(YEAR FROM order_date) = EXTRACT(YEAR FROM CURRENT_DATE) - 1",
+  "gold_result": {
+    "rows": [
+      {
+        "total_revenue": "12722174.59"
+      }
+    ],
+    "columns": [
+      "total_revenue"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

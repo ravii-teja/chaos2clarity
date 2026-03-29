@@ -1,0 +1,18 @@
+{
+  "id": "L1-12",
+  "tier": "L1",
+  "nl_prompt": "What is our total cost of goods sold this year?",
+  "gold_sql": "SELECT SUM(p.cost_price * o.quantity) as cogs FROM orders o JOIN products p ON o.product_id = p.id WHERE EXTRACT(YEAR FROM o.order_date) = EXTRACT(YEAR FROM CURRENT_DATE)",
+  "gold_result": {
+    "rows": [
+      {
+        "cogs": "1366043.92"
+      }
+    ],
+    "columns": [
+      "cogs"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

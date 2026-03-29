@@ -1,0 +1,75 @@
+{
+  "id": "L4-04",
+  "tier": "L4",
+  "nl_prompt": "Find customers who mentioned competitors in support.",
+  "gold_sql": "SELECT DISTINCT customer_id FROM orders LIMIT 20",
+  "gold_result": {
+    "rows": [
+      {
+        "customer_id": 505
+      },
+      {
+        "customer_id": 574
+      },
+      {
+        "customer_id": 337
+      },
+      {
+        "customer_id": 683
+      },
+      {
+        "customer_id": 471
+      },
+      {
+        "customer_id": 247
+      },
+      {
+        "customer_id": 125
+      },
+      {
+        "customer_id": 331
+      },
+      {
+        "customer_id": 491
+      },
+      {
+        "customer_id": 653
+      },
+      {
+        "customer_id": 915
+      },
+      {
+        "customer_id": 495
+      },
+      {
+        "customer_id": 358
+      },
+      {
+        "customer_id": 196
+      },
+      {
+        "customer_id": 967
+      },
+      {
+        "customer_id": 439
+      },
+      {
+        "customer_id": 168
+      },
+      {
+        "customer_id": 297
+      },
+      {
+        "customer_id": 528
+      },
+      {
+        "customer_id": 584
+      }
+    ],
+    "columns": [
+      "customer_id"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

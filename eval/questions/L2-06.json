@@ -1,0 +1,28 @@
+{
+  "id": "L2-06",
+  "tier": "L2",
+  "nl_prompt": "What is the revenue per customer segment?",
+  "gold_sql": "SELECT c.segment, SUM(o.line_value) as segment_revenue FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.segment ORDER BY segment_revenue DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "segment": "SMB",
+        "segment_revenue": "12060629.55"
+      },
+      {
+        "segment": "Mid-Market",
+        "segment_revenue": "7813323.29"
+      },
+      {
+        "segment": "Enterprise",
+        "segment_revenue": "5287132.85"
+      }
+    ],
+    "columns": [
+      "segment",
+      "segment_revenue"
+    ]
+  },
+  "primary_error_class": "E3",
+  "error_note": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L3-02",
+  "tier": "L3",
+  "nl_prompt": "What is the average deal size for customers whose deliveries were delayed?",
+  "gold_sql": "SELECT AVG(so.amount) as avg_deal_size FROM sf_opportunities so JOIN sf_accounts sa ON so.account_id = sa.account_id JOIN customers c ON c.email = sa.email_address JOIN orders o ON c.id = o.customer_id JOIN logistics_deliveries ld ON o.shipping_id = ld.shipping_ref WHERE ld.status_code = 5",
+  "gold_result": {
+    "rows": [
+      {
+        "avg_deal_size": 265904.3506310678
+      }
+    ],
+    "columns": [
+      "avg_deal_size"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

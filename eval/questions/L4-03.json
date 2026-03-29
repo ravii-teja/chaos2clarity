@@ -1,0 +1,48 @@
+{
+  "id": "L4-03",
+  "tier": "L4",
+  "nl_prompt": "What common complaints appear for delayed shipments?",
+  "gold_sql": "SELECT ld.carrier_name, COUNT(*) as c FROM logistics_deliveries ld WHERE ld.status_code = 5 GROUP BY ld.carrier_name ORDER BY c DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "carrier_name": "Kramer and Sons Logistics",
+        "c": 63
+      },
+      {
+        "carrier_name": "Marshall Ltd Logistics",
+        "c": 62
+      },
+      {
+        "carrier_name": "Johnson, Davies and Cortez Logistics",
+        "c": 58
+      },
+      {
+        "carrier_name": "Jordan-Carter Logistics",
+        "c": 55
+      },
+      {
+        "carrier_name": "Woodard-Guzman Logistics",
+        "c": 49
+      },
+      {
+        "carrier_name": "Harris, Adams and Martin Logistics",
+        "c": 49
+      },
+      {
+        "carrier_name": "Johnson-Griffin Logistics",
+        "c": 48
+      },
+      {
+        "carrier_name": "Griffin, Brown and Lawrence Logistics",
+        "c": 46
+      }
+    ],
+    "columns": [
+      "carrier_name",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

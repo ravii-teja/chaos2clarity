@@ -1,0 +1,972 @@
+{
+  "id": "L3-01",
+  "tier": "L3",
+  "nl_prompt": "Which customers with active CRM deals had delivery issues?",
+  "gold_sql": "SELECT DISTINCT c.name FROM customers c JOIN sf_accounts sa ON c.email = sa.email_address JOIN sf_opportunities so ON sa.account_id = so.account_id JOIN orders o ON c.id = o.customer_id JOIN logistics_deliveries ld ON o.shipping_id = ld.shipping_ref WHERE so.stage NOT IN ('Closed Won', 'Closed Lost') AND ld.status_code IN (5, 6)",
+  "gold_result": {
+    "rows": [
+      {
+        "name": "Casey Floyd"
+      },
+      {
+        "name": "Terry Montgomery"
+      },
+      {
+        "name": "Peter Vaughn DDS"
+      },
+      {
+        "name": "Thomas Curry"
+      },
+      {
+        "name": "Crystal Williams"
+      },
+      {
+        "name": "Anna Hardy"
+      },
+      {
+        "name": "Crystal Sullivan"
+      },
+      {
+        "name": "Jennifer Douglas"
+      },
+      {
+        "name": "Mary May"
+      },
+      {
+        "name": "Richard Diaz"
+      },
+      {
+        "name": "Donna Sullivan"
+      },
+      {
+        "name": "Elizabeth James"
+      },
+      {
+        "name": "Terri Kerr"
+      },
+      {
+        "name": "Danielle Phillips"
+      },
+      {
+        "name": "Michael Edwards"
+      },
+      {
+        "name": "Jamie Montgomery"
+      },
+      {
+        "name": "Juan Reyes"
+      },
+      {
+        "name": "Robert Robles"
+      },
+      {
+        "name": "Deborah May"
+      },
+      {
+        "name": "Carol Jennings"
+      },
+      {
+        "name": "Amanda Diaz"
+      },
+      {
+        "name": "Mr. Steven Herrera"
+      },
+      {
+        "name": "Lisa Holloway"
+      },
+      {
+        "name": "Casey James"
+      },
+      {
+        "name": "Jeremy Martinez"
+      },
+      {
+        "name": "James Ferrell"
+      },
+      {
+        "name": "Linda Goodman"
+      },
+      {
+        "name": "Jessica Hull"
+      },
+      {
+        "name": "Brandon Shaffer"
+      },
+      {
+        "name": "Michelle Harris"
+      },
+      {
+        "name": "Troy Stephens"
+      },
+      {
+        "name": "Michael Howard"
+      },
+      {
+        "name": "Michelle James"
+      },
+      {
+        "name": "Cameron Irwin"
+      },
+      {
+        "name": "Leslie Alvarado"
+      },
+      {
+        "name": "Emily Fox"
+      },
+      {
+        "name": "Jennifer Payne"
+      },
+      {
+        "name": "David Hall"
+      },
+      {
+        "name": "Christopher Guerra"
+      },
+      {
+        "name": "Kristen Salazar"
+      },
+      {
+        "name": "Andrew Hughes"
+      },
+      {
+        "name": "Megan Joyce"
+      },
+      {
+        "name": "Melissa Mccormick"
+      },
+      {
+        "name": "Katherine Ray"
+      },
+      {
+        "name": "Michael Gonzalez"
+      },
+      {
+        "name": "Anthony Dougherty"
+      },
+      {
+        "name": "Beverly Bush"
+      },
+      {
+        "name": "Matthew Murphy"
+      },
+      {
+        "name": "Wanda Ramos"
+      },
+      {
+        "name": "Amanda Nielsen"
+      },
+      {
+        "name": "Whitney Cooper"
+      },
+      {
+        "name": "Brendan Richardson"
+      },
+      {
+        "name": "Julie Alexander"
+      },
+      {
+        "name": "Dr. Virginia Cunningham"
+      },
+      {
+        "name": "Ryan Wiley"
+      },
+      {
+        "name": "Kenneth Stokes"
+      },
+      {
+        "name": "Jennifer Miles"
+      },
+      {
+        "name": "Tiffany Barnes"
+      },
+      {
+        "name": "Ashlee Jackson"
+      },
+      {
+        "name": "Steven Andersen"
+      },
+      {
+        "name": "Jessica Rojas"
+      },
+      {
+        "name": "Patrick Bonilla"
+      },
+      {
+        "name": "Jeffrey Johnson"
+      },
+      {
+        "name": "Richard Avery"
+      },
+      {
+        "name": "Kayla Rodriguez"
+      },
+      {
+        "name": "Emily Hayes"
+      },
+      {
+        "name": "Bonnie Santos"
+      },
+      {
+        "name": "Christy Lee"
+      },
+      {
+        "name": "Robert Martinez"
+      },
+      {
+        "name": "Raymond Oconnor"
+      },
+      {
+        "name": "Michael Craig"
+      },
+      {
+        "name": "Nicholas Grant"
+      },
+      {
+        "name": "Robert Ortiz"
+      },
+      {
+        "name": "Mercedes Barnes"
+      },
+      {
+        "name": "Sarah Jones"
+      },
+      {
+        "name": "Mrs. Melanie Collins"
+      },
+      {
+        "name": "Richard Lee"
+      },
+      {
+        "name": "Linda Rich"
+      },
+      {
+        "name": "Todd Fischer"
+      },
+      {
+        "name": "Michael Paul"
+      },
+      {
+        "name": "Christian Cole"
+      },
+      {
+        "name": "Mariah Robles"
+      },
+      {
+        "name": "Brenda Snyder PhD"
+      },
+      {
+        "name": "Samantha Robertson"
+      },
+      {
+        "name": "Brian Cortez"
+      },
+      {
+        "name": "Erica Wilson"
+      },
+      {
+        "name": "Eric Nguyen"
+      },
+      {
+        "name": "Jill Moore"
+      },
+      {
+        "name": "Pamela Lopez"
+      },
+      {
+        "name": "Martha Ruiz"
+      },
+      {
+        "name": "Derrick Rogers"
+      },
+      {
+        "name": "Veronica Brewer"
+      },
+      {
+        "name": "Susan Crawford"
+      },
+      {
+        "name": "Julie Banks"
+      },
+      {
+        "name": "Heather Nunez"
+      },
+      {
+        "name": "Christopher Phillips"
+      },
+      {
+        "name": "Rebecca Lee"
+      },
+      {
+        "name": "Diana Fuller"
+      },
+      {
+        "name": "Destiny Brown"
+      },
+      {
+        "name": "Rachel Taylor"
+      },
+      {
+        "name": "Stacy Fitzgerald"
+      },
+      {
+        "name": "Dorothy Mclaughlin"
+      },
+      {
+        "name": "David Stokes"
+      },
+      {
+        "name": "Thomas Thomas"
+      },
+      {
+        "name": "Sheryl Gutierrez"
+      },
+      {
+        "name": "Heather Silva"
+      },
+      {
+        "name": "Emily Herrera"
+      },
+      {
+        "name": "Jennifer Perez"
+      },
+      {
+        "name": "Renee Gonzales"
+      },
+      {
+        "name": "Kristen Roberts"
+      },
+      {
+        "name": "John Harris"
+      },
+      {
+        "name": "Joshua Hernandez"
+      },
+      {
+        "name": "Amy Robinson"
+      },
+      {
+        "name": "Donna Adams"
+      },
+      {
+        "name": "Mary Perry"
+      },
+      {
+        "name": "Rebecca Chambers"
+      },
+      {
+        "name": "Jennifer Wood"
+      },
+      {
+        "name": "Kimberly May"
+      },
+      {
+        "name": "Anna Robertson"
+      },
+      {
+        "name": "Angie Caldwell"
+      },
+      {
+        "name": "Michael Powell"
+      },
+      {
+        "name": "Emily Collins"
+      },
+      {
+        "name": "Chad Farmer"
+      },
+      {
+        "name": "Robin Trujillo"
+      },
+      {
+        "name": "Paul Cruz Jr."
+      },
+      {
+        "name": "Joel Allen"
+      },
+      {
+        "name": "Matthew Hunt"
+      },
+      {
+        "name": "Maria Collins"
+      },
+      {
+        "name": "Lori Padilla"
+      },
+      {
+        "name": "Cynthia Le"
+      },
+      {
+        "name": "Angela Jones"
+      },
+      {
+        "name": "Thomas Williams"
+      },
+      {
+        "name": "Sierra Johnson"
+      },
+      {
+        "name": "James Weber"
+      },
+      {
+        "name": "Emily Fischer"
+      },
+      {
+        "name": "Tammy Ponce"
+      },
+      {
+        "name": "Brittany Larson"
+      },
+      {
+        "name": "Briana Turner"
+      },
+      {
+        "name": "David Hoffman"
+      },
+      {
+        "name": "Sandra Nunez"
+      },
+      {
+        "name": "Ryan Morgan"
+      },
+      {
+        "name": "Nathan Casey"
+      },
+      {
+        "name": "Steven Wright"
+      },
+      {
+        "name": "Joel Lara"
+      },
+      {
+        "name": "Brenda Collins"
+      },
+      {
+        "name": "Anthony Curtis"
+      },
+      {
+        "name": "Frances Gibson"
+      },
+      {
+        "name": "Gregory Murray"
+      },
+      {
+        "name": "Alexandria Jimenez"
+      },
+      {
+        "name": "Jaclyn Crane"
+      },
+      {
+        "name": "Amanda Johnson"
+      },
+      {
+        "name": "Thomas Sanchez"
+      },
+      {
+        "name": "Monica Dodson"
+      },
+      {
+        "name": "Amber Shannon"
+      },
+      {
+        "name": "Joshua Petersen"
+      },
+      {
+        "name": "Deborah Campbell"
+      },
+      {
+        "name": "Debra Mitchell"
+      },
+      {
+        "name": "Jill Juarez"
+      },
+      {
+        "name": "Anthony Hayes"
+      },
+      {
+        "name": "Mary Ferguson"
+      },
+      {
+        "name": "Heather Ellis"
+      },
+      {
+        "name": "Derek Martinez"
+      },
+      {
+        "name": "Alex Hernandez"
+      },
+      {
+        "name": "Sarah Villegas"
+      },
+      {
+        "name": "Jody Marshall"
+      },
+      {
+        "name": "Rhonda Lee"
+      },
+      {
+        "name": "Kathleen Cohen"
+      },
+      {
+        "name": "Amy Pena"
+      },
+      {
+        "name": "Sarah Thompson"
+      },
+      {
+        "name": "William Evans"
+      },
+      {
+        "name": "Amanda Riggs"
+      },
+      {
+        "name": "Nicole Phillips"
+      },
+      {
+        "name": "Kara Ferguson"
+      },
+      {
+        "name": "Mr. Michael Johnson Jr."
+      },
+      {
+        "name": "Jeffery Jenkins"
+      },
+      {
+        "name": "Elizabeth Price"
+      },
+      {
+        "name": "Travis Hobbs"
+      },
+      {
+        "name": "Keith Graham"
+      },
+      {
+        "name": "Brad Allen"
+      },
+      {
+        "name": "Daniel Haley"
+      },
+      {
+        "name": "Paul Sheppard"
+      },
+      {
+        "name": "John Wilson"
+      },
+      {
+        "name": "James Willis"
+      },
+      {
+        "name": "Laura Haney"
+      },
+      {
+        "name": "Kimberly Stout"
+      },
+      {
+        "name": "Angela Walsh"
+      },
+      {
+        "name": "Teresa Matthews"
+      },
+      {
+        "name": "Jeffrey Solomon"
+      },
+      {
+        "name": "Caroline Cortez"
+      },
+      {
+        "name": "Sherry Johnson"
+      },
+      {
+        "name": "Catherine Morales"
+      },
+      {
+        "name": "Lauren Jackson"
+      },
+      {
+        "name": "Sharon Wells"
+      },
+      {
+        "name": "Alejandro Martinez"
+      },
+      {
+        "name": "Heather Stephens"
+      },
+      {
+        "name": "Samantha Zavala MD"
+      },
+      {
+        "name": "Joshua Young"
+      },
+      {
+        "name": "Julie Ward"
+      },
+      {
+        "name": "Maria Lynch"
+      },
+      {
+        "name": "Benjamin Neal"
+      },
+      {
+        "name": "Elizabeth Mccarthy"
+      },
+      {
+        "name": "Richard Washington"
+      },
+      {
+        "name": "Michelle Brandt"
+      },
+      {
+        "name": "James Harris"
+      },
+      {
+        "name": "Andrew Kelly"
+      },
+      {
+        "name": "Tina Robbins"
+      },
+      {
+        "name": "Beth Carroll"
+      },
+      {
+        "name": "Alec Ryan"
+      },
+      {
+        "name": "Yolanda Gaines"
+      },
+      {
+        "name": "Carol Hughes"
+      },
+      {
+        "name": "Alan Mills"
+      },
+      {
+        "name": "Erica Moon"
+      },
+      {
+        "name": "Joseph Haynes"
+      },
+      {
+        "name": "Sheila Jones"
+      },
+      {
+        "name": "Richard Hardy"
+      },
+      {
+        "name": "Jennifer Graham"
+      },
+      {
+        "name": "Paige Guerrero"
+      },
+      {
+        "name": "Monica Hester"
+      },
+      {
+        "name": "Anthony Hooper"
+      },
+      {
+        "name": "Autumn Torres"
+      },
+      {
+        "name": "Mr. James Kramer"
+      },
+      {
+        "name": "Kelly Christensen"
+      },
+      {
+        "name": "Jack Pollard"
+      },
+      {
+        "name": "Nathan Tucker"
+      },
+      {
+        "name": "Diane Byrd MD"
+      },
+      {
+        "name": "Samantha Davis"
+      },
+      {
+        "name": "Mrs. Tonya Kaufman"
+      },
+      {
+        "name": "Eric White"
+      },
+      {
+        "name": "Jonathan Roberts"
+      },
+      {
+        "name": "Jacob Mckee"
+      },
+      {
+        "name": "Tiffany Jackson"
+      },
+      {
+        "name": "Rebecca Hill"
+      },
+      {
+        "name": "Mark Oliver"
+      },
+      {
+        "name": "Tyler Montgomery"
+      },
+      {
+        "name": "Paul Kelly"
+      },
+      {
+        "name": "James Martin"
+      },
+      {
+        "name": "Daniel Barton"
+      },
+      {
+        "name": "Benjamin Sanchez"
+      },
+      {
+        "name": "Melissa Morse"
+      },
+      {
+        "name": "Jennifer Johnson"
+      },
+      {
+        "name": "Lauren Williams"
+      },
+      {
+        "name": "Raymond Barber"
+      },
+      {
+        "name": "James Davenport"
+      },
+      {
+        "name": "David Charles"
+      },
+      {
+        "name": "Steven Ramos"
+      },
+      {
+        "name": "Jordan Santiago"
+      },
+      {
+        "name": "Shelly May"
+      },
+      {
+        "name": "Bobby Hurst"
+      },
+      {
+        "name": "Patricia Simpson"
+      },
+      {
+        "name": "Julie Roberts"
+      },
+      {
+        "name": "Jordan Pace"
+      },
+      {
+        "name": "Natasha Williams"
+      },
+      {
+        "name": "James Hodges"
+      },
+      {
+        "name": "Ethan Ingram"
+      },
+      {
+        "name": "Rebecca Kelley"
+      },
+      {
+        "name": "Denise Mccann"
+      },
+      {
+        "name": "Brian Martin"
+      },
+      {
+        "name": "Tony Leonard"
+      },
+      {
+        "name": "Cindy Clayton"
+      },
+      {
+        "name": "Shane Torres"
+      },
+      {
+        "name": "Aimee Gonzalez"
+      },
+      {
+        "name": "Kaitlyn Charles"
+      },
+      {
+        "name": "Susan Wallace"
+      },
+      {
+        "name": "Cheryl Moore"
+      },
+      {
+        "name": "Mrs. Christine Dougherty"
+      },
+      {
+        "name": "Carlos Love"
+      },
+      {
+        "name": "Robert Potter"
+      },
+      {
+        "name": "Mary Hernandez"
+      },
+      {
+        "name": "Shannon Mccann"
+      },
+      {
+        "name": "Mary Jones"
+      },
+      {
+        "name": "Kristina Preston"
+      },
+      {
+        "name": "Pamela Castillo"
+      },
+      {
+        "name": "Heather Chavez"
+      },
+      {
+        "name": "Kimberly Figueroa"
+      },
+      {
+        "name": "Ellen Thornton"
+      },
+      {
+        "name": "Amanda Brown"
+      },
+      {
+        "name": "Julian White"
+      },
+      {
+        "name": "Victoria Camacho"
+      },
+      {
+        "name": "Laura Walls"
+      },
+      {
+        "name": "Dana Santiago"
+      },
+      {
+        "name": "Sharon Martinez DVM"
+      },
+      {
+        "name": "Jennifer Avila"
+      },
+      {
+        "name": "Heather Butler"
+      },
+      {
+        "name": "Erin Daniels"
+      },
+      {
+        "name": "Ian Andrade"
+      },
+      {
+        "name": "Jennifer Lewis"
+      },
+      {
+        "name": "Jessica Garcia"
+      },
+      {
+        "name": "Nathan Chavez"
+      },
+      {
+        "name": "Peter Farrell"
+      },
+      {
+        "name": "Abigail Potter"
+      },
+      {
+        "name": "Jennifer Blackwell"
+      },
+      {
+        "name": "Lori Brown DDS"
+      },
+      {
+        "name": "Heather Callahan"
+      },
+      {
+        "name": "Dr. Steven Martin"
+      },
+      {
+        "name": "Amanda Shields"
+      },
+      {
+        "name": "John Ray"
+      },
+      {
+        "name": "Mary Anderson"
+      },
+      {
+        "name": "Lisa Duran"
+      },
+      {
+        "name": "Sandra Davis"
+      },
+      {
+        "name": "Erin Silva"
+      },
+      {
+        "name": "Cheryl Kelly"
+      },
+      {
+        "name": "John Sanchez"
+      },
+      {
+        "name": "Michael Love"
+      },
+      {
+        "name": "Phillip Underwood"
+      },
+      {
+        "name": "John Smith"
+      },
+      {
+        "name": "Dakota Sandoval"
+      },
+      {
+        "name": "David Reeves"
+      },
+      {
+        "name": "Lee Lee"
+      },
+      {
+        "name": "Mary Faulkner"
+      },
+      {
+        "name": "Cindy Walker"
+      },
+      {
+        "name": "Melissa Johnston"
+      },
+      {
+        "name": "Kristin Huerta"
+      },
+      {
+        "name": "Karen Carroll"
+      },
+      {
+        "name": "Lisa Reynolds"
+      },
+      {
+        "name": "Eric Sullivan"
+      },
+      {
+        "name": "Matthew Wright"
+      },
+      {
+        "name": "Ashley Singleton"
+      },
+      {
+        "name": "Robin Davidson"
+      },
+      {
+        "name": "Amanda Garner"
+      }
+    ],
+    "columns": [
+      "name"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

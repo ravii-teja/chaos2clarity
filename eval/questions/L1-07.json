@@ -1,0 +1,18 @@
+{
+  "id": "L1-07",
+  "tier": "L1",
+  "nl_prompt": "How many orders were cancelled this year?",
+  "gold_sql": "SELECT COUNT(*) as cancelled_count FROM orders WHERE status = 'cancelled' AND EXTRACT(YEAR FROM order_date) = EXTRACT(YEAR FROM CURRENT_DATE)",
+  "gold_result": {
+    "rows": [
+      {
+        "cancelled_count": 101
+      }
+    ],
+    "columns": [
+      "cancelled_count"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

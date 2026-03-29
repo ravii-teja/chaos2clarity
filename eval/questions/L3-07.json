@@ -1,0 +1,40 @@
+{
+  "id": "L3-07",
+  "tier": "L3",
+  "nl_prompt": "What is the on-time delivery rate by CRM deal stage?",
+  "gold_sql": "SELECT so.stage, ROUND(100.0 * COUNT(CASE WHEN ld.status_code = 4 THEN 1 END) / COUNT(*), 2) as ontime_rate FROM sf_opportunities so JOIN sf_accounts sa ON so.account_id = sa.account_id JOIN customers c ON c.email = sa.email_address JOIN orders o ON c.id = o.customer_id JOIN logistics_deliveries ld ON o.shipping_id = ld.shipping_ref GROUP BY so.stage",
+  "gold_result": {
+    "rows": [
+      {
+        "stage": "Qualification",
+        "ontime_rate": 85.98
+      },
+      {
+        "stage": "Closed Won",
+        "ontime_rate": 84.96
+      },
+      {
+        "stage": "Negotiation",
+        "ontime_rate": 84.71
+      },
+      {
+        "stage": "Proposal",
+        "ontime_rate": 86.03
+      },
+      {
+        "stage": "Prospecting",
+        "ontime_rate": 86.07
+      },
+      {
+        "stage": "Closed Lost",
+        "ontime_rate": 85.76
+      }
+    ],
+    "columns": [
+      "stage",
+      "ontime_rate"
+    ]
+  },
+  "primary_error_class": "E5",
+  "error_note": ""
+}

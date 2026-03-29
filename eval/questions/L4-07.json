@@ -1,0 +1,20 @@
+{
+  "id": "L4-07",
+  "tier": "L4",
+  "nl_prompt": "Summarize key themes for Enterprise segment accounts.",
+  "gold_sql": "SELECT c.segment, COUNT(*) as c FROM customers c JOIN orders o ON c.id = o.customer_id WHERE c.segment = 'Enterprise' GROUP BY c.segment",
+  "gold_result": {
+    "rows": [
+      {
+        "segment": "Enterprise",
+        "c": 2102
+      }
+    ],
+    "columns": [
+      "segment",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

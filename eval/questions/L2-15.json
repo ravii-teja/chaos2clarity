@@ -1,0 +1,18 @@
+{
+  "id": "L2-15",
+  "tier": "L2",
+  "nl_prompt": "What percentage of revenue comes from our top 20 percent of customers?",
+  "gold_sql": "WITH customer_rev AS (SELECT customer_id, SUM(line_value) as rev FROM orders GROUP BY customer_id), ranked AS (SELECT rev, NTILE(5) OVER (ORDER BY rev DESC) as quintile FROM customer_rev) SELECT ROUND(100.0 * SUM(CASE WHEN quintile = 1 THEN rev END) / SUM(rev), 2) as top20_pct FROM ranked",
+  "gold_result": {
+    "rows": [
+      {
+        "top20_pct": 32.48
+      }
+    ],
+    "columns": [
+      "top20_pct"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

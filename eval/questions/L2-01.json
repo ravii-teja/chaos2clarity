@@ -1,0 +1,36 @@
+{
+  "id": "L2-01",
+  "tier": "L2",
+  "nl_prompt": "What is the revenue breakdown by product category?",
+  "gold_sql": "SELECT p.category, SUM(o.line_value) as revenue FROM orders o JOIN products p ON o.product_id = p.id GROUP BY p.category ORDER BY revenue DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "category": "Sports",
+        "revenue": "5507093.26"
+      },
+      {
+        "category": "Home",
+        "revenue": "5425367.46"
+      },
+      {
+        "category": "Clothing",
+        "revenue": "4852892.88"
+      },
+      {
+        "category": "Electronics",
+        "revenue": "4789856.42"
+      },
+      {
+        "category": "Food",
+        "revenue": "4585875.67"
+      }
+    ],
+    "columns": [
+      "category",
+      "revenue"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

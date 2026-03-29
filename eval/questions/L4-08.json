@@ -1,0 +1,48 @@
+{
+  "id": "L4-08",
+  "tier": "L4",
+  "nl_prompt": "Which logistics partners have most damaged goods complaints?",
+  "gold_sql": "SELECT ld.carrier_name, COUNT(*) as c FROM logistics_deliveries ld WHERE ld.status_code IN (5, 6) GROUP BY ld.carrier_name ORDER BY c DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "carrier_name": "Marshall Ltd Logistics",
+        "c": 117
+      },
+      {
+        "carrier_name": "Kramer and Sons Logistics",
+        "c": 109
+      },
+      {
+        "carrier_name": "Johnson-Griffin Logistics",
+        "c": 106
+      },
+      {
+        "carrier_name": "Jordan-Carter Logistics",
+        "c": 102
+      },
+      {
+        "carrier_name": "Johnson, Davies and Cortez Logistics",
+        "c": 100
+      },
+      {
+        "carrier_name": "Harris, Adams and Martin Logistics",
+        "c": 91
+      },
+      {
+        "carrier_name": "Woodard-Guzman Logistics",
+        "c": 86
+      },
+      {
+        "carrier_name": "Griffin, Brown and Lawrence Logistics",
+        "c": 84
+      }
+    ],
+    "columns": [
+      "carrier_name",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

@@ -1,0 +1,36 @@
+{
+  "id": "L4-02",
+  "tier": "L4",
+  "nl_prompt": "Which product categories have the most negative sentiment?",
+  "gold_sql": "SELECT p.category, COUNT(*) as c FROM products p JOIN orders o ON p.id = o.product_id GROUP BY p.category ORDER BY c DESC",
+  "gold_result": {
+    "rows": [
+      {
+        "category": "Home",
+        "c": 2085
+      },
+      {
+        "category": "Electronics",
+        "c": 2026
+      },
+      {
+        "category": "Sports",
+        "c": 1980
+      },
+      {
+        "category": "Food",
+        "c": 1971
+      },
+      {
+        "category": "Clothing",
+        "c": 1938
+      }
+    ],
+    "columns": [
+      "category",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

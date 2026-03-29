@@ -1,0 +1,18 @@
+{
+  "id": "L1-14",
+  "tier": "L1",
+  "nl_prompt": "How many distinct product categories do we sell?",
+  "gold_sql": "SELECT COUNT(DISTINCT category) as category_count FROM products",
+  "gold_result": {
+    "rows": [
+      {
+        "category_count": 5
+      }
+    ],
+    "columns": [
+      "category_count"
+    ]
+  },
+  "primary_error_class": "",
+  "error_note": ""
+}

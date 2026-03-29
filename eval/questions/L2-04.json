@@ -1,0 +1,36 @@
+{
+  "id": "L2-04",
+  "tier": "L2",
+  "nl_prompt": "What is the average days between order and shipment per product category?",
+  "gold_sql": "SELECT p.category, AVG(o.ship_date - o.order_date) as avg_ship_days FROM orders o JOIN products p ON o.product_id = p.id WHERE o.ship_date IS NOT NULL GROUP BY p.category",
+  "gold_result": {
+    "rows": [
+      {
+        "category": "Home",
+        "avg_ship_days": 6.852749852158486
+      },
+      {
+        "category": "Electronics",
+        "avg_ship_days": 6.8962099125364436
+      },
+      {
+        "category": "Sports",
+        "avg_ship_days": 6.956629491945477
+      },
+      {
+        "category": "Food",
+        "avg_ship_days": 6.833022967101179
+      },
+      {
+        "category": "Clothing",
+        "avg_ship_days": 7.010236724248241
+      }
+    ],
+    "columns": [
+      "category",
+      "avg_ship_days"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}

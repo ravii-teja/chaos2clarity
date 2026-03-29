@@ -1,0 +1,20 @@
+{
+  "id": "L2-07",
+  "tier": "L2",
+  "nl_prompt": "Which sales rep closed the most orders?",
+  "gold_sql": "SELECT r.rep_name, COUNT(o.id) as order_count FROM orders o JOIN sales_reps r ON o.sales_rep_id = r.id GROUP BY r.rep_name ORDER BY order_count DESC LIMIT 1",
+  "gold_result": {
+    "rows": [
+      {
+        "rep_name": "Rhonda Morrison",
+        "order_count": 443
+      }
+    ],
+    "columns": [
+      "rep_name",
+      "order_count"
+    ]
+  },
+  "primary_error_class": "E3",
+  "error_note": ""
+}

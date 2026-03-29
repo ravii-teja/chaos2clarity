@@ -1,0 +1,28 @@
+{
+  "id": "L4-05",
+  "tier": "L4",
+  "nl_prompt": "What were top 3 reasons for returns?",
+  "gold_sql": "SELECT reason, COUNT(*) as c FROM returns GROUP BY reason ORDER BY c DESC LIMIT 3",
+  "gold_result": {
+    "rows": [
+      {
+        "reason": "Better price elsewhere",
+        "c": 114
+      },
+      {
+        "reason": "Wrong item shipped",
+        "c": 110
+      },
+      {
+        "reason": "Changed mind",
+        "c": 104
+      }
+    ],
+    "columns": [
+      "reason",
+      "c"
+    ]
+  },
+  "primary_error_class": "E4",
+  "error_note": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "L1-04",
+  "tier": "L1",
+  "nl_prompt": "How many unique customers made a purchase in the last 6 months?",
+  "gold_sql": "SELECT COUNT(DISTINCT customer_id) as unique_customers FROM orders WHERE order_date >= CURRENT_DATE - INTERVAL 180 DAY",
+  "gold_result": {
+    "rows": [
+      {
+        "unique_customers": 934
+      }
+    ],
+    "columns": [
+      "unique_customers"
+    ]
+  },
+  "primary_error_class": "E1",
+  "error_note": ""
+}

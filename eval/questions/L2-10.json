@@ -1,0 +1,28 @@
+{
+  "id": "L2-10",
+  "tier": "L2",
+  "nl_prompt": "What is the average order value per customer segment?",
+  "gold_sql": "SELECT c.segment, AVG(o.line_value) as avg_order_value FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.segment",
+  "gold_result": {
+    "rows": [
+      {
+        "segment": "Enterprise",
+        "avg_order_value": 2515.2867982873454
+      },
+      {
+        "segment": "Mid-Market",
+        "avg_order_value": 2555.8793882891723
+      },
+      {
+        "segment": "SMB",
+        "avg_order_value": 2491.350867589341
+      }
+    ],
+    "columns": [
+      "segment",
+      "avg_order_value"
+    ]
+  },
+  "primary_error_class": "E2",
+  "error_note": ""
+}
