@@ -39,10 +39,12 @@ runs/
 # OS
 Thumbs.db
 
-# Old Drafts and Markdown Scratch Files
-chaos2clarity_v*.md
-chaos2clarity_experiments.md
-experiment_overview.md
+# Ignore all markdown files by default
+*.md
+# But explicitly track these 3 files:
+!README.md
+!chaos2clarity_paper_results_v6.md
+!experiment_overview.md
 
 # Deprecated Scripts (Functionality moved to c2c_experiments.ipynb)
 run_experiments.py
