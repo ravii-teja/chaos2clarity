@@ -38,3 +38,14 @@ runs/
 
 # OS
 Thumbs.db
+
+# Old Drafts and Markdown Scratch Files
+chaos2clarity_v*.md
+chaos2clarity_experiments.md
+experiment_overview.md
+
+# Deprecated Scripts (Functionality moved to c2c_experiments.ipynb)
+run_experiments.py
+run_alpha_sensitivity.py
+notebooks/00_data_generation.ipynb
+notebooks/04_experiment_runner.ipynb

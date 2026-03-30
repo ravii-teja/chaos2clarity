@@ -6,7 +6,7 @@
     "customer_name":"Denise Thompson",
     "category":"Shipping Issue",
     "description":"Customer Denise Thompson (wpage@example.org) reported: shipping issue. Customer is negative. Customer mentioned switching to BetterBuy. Address its writer pattern middle director matter trip executive image up economy cultural same brother.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"BetterBuy"
@@ -18,7 +18,7 @@
     "customer_name":"Matthew Miller",
     "category":"Product Defect",
     "description":"Customer Matthew Miller (michele28@example.org) reported: product defect. Customer is negative. Meeting race imagine occur set report wide brother future quality.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -30,7 +30,7 @@
     "customer_name":"Jack Pollard",
     "category":"Damaged Goods",
     "description":"Customer Jack Pollard (amy50@example.com) reported: damaged goods. Customer is negative. Customer mentioned switching to QuickShip. Decade example gun support word in another probably blue everybody continue place base.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"QuickShip"
@@ -42,7 +42,7 @@
     "customer_name":"Javier Johnson",
     "category":"Return Request",
     "description":"Customer Javier Johnson (jesseguzman@example.net) reported: return request. Customer is negative. Question save also road include single community year activity truth blood hand smile recognize enjoy.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -54,7 +54,7 @@
     "customer_name":"Jeremy Coleman",
     "category":"Damaged Goods",
     "description":"Customer Jeremy Coleman (nperry@example.net) reported: damaged goods. Customer is negative. Decide on thing into east money company enjoy general other deal production college.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -66,7 +66,7 @@
     "customer_name":"Keith Graham",
     "category":"Shipping Issue",
     "description":"Customer Keith Graham (joelgreen@example.com) reported: shipping issue. Customer is very negative. Space question class garden report participant society someone base try cause at along.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -78,7 +78,7 @@
     "customer_name":"Daniel Barton",
     "category":"Billing",
     "description":"Customer Daniel Barton (dennis88@example.org) reported: billing. Discuss yard best feel husband which public.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -90,7 +90,7 @@
     "customer_name":"Kelli Lopez",
     "category":"Billing",
     "description":"Customer Kelli Lopez (vlewis@example.com) reported: billing. Customer is very negative. Success why among figure grow we before maybe type peace machine future visit drop every.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -102,7 +102,7 @@
     "customer_name":"Trevor Peterson",
     "category":"Return Request",
     "description":"Customer Trevor Peterson (ilee@example.org) reported: return request. Customer is negative. New accept value site floor eight detail suggest door front executive tend development tell ground.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -114,7 +114,7 @@
     "customer_name":"Nicholas Cisneros",
     "category":"General Inquiry",
     "description":"Customer Nicholas Cisneros (lindsay63@example.com) reported: general inquiry. Customer is negative. Center else well challenge energy message world.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -126,7 +126,7 @@
     "customer_name":"Lauren Bray",
     "category":"Damaged Goods",
     "description":"Customer Lauren Bray (tingram@example.com) reported: damaged goods. College road nature yes history focus agency cut.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -138,7 +138,7 @@
     "customer_name":"Aimee Gonzalez",
     "category":"Shipping Issue",
     "description":"Customer Aimee Gonzalez (jodi37@example.com) reported: shipping issue. Customer is negative. Customer mentioned switching to PrimeGoods. Fire bring you age share door store our lawyer north official walk about.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"PrimeGoods"
@@ -150,7 +150,7 @@
     "customer_name":"Gary Turner",
     "category":"Product Defect",
     "description":"Customer Gary Turner (james92@example.net) reported: product defect. Customer is negative. Air answer number prove force someone very Congress data decade home always image accept.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -162,7 +162,7 @@
     "customer_name":"Robert Reese",
     "category":"Missing Items",
     "description":"Customer Robert Reese (williamsmelvin@example.org) reported: missing items. Customer is negative. Give coach guy include range her letter reach day.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -174,7 +174,7 @@
     "customer_name":"Sharon Smith",
     "category":"Product Defect",
     "description":"Customer Sharon Smith (yhall@example.net) reported: product defect. Customer is negative. Meeting art effect glass son either current beautiful simply customer second risk cause table stage response.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -186,7 +186,7 @@
     "customer_name":"Mr. Steven Herrera",
     "category":"Shipping Issue",
     "description":"Customer Mr. Steven Herrera (steven60@example.net) reported: shipping issue. Customer is negative. Figure security marriage weight stand day way huge single head fear care whom.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -198,7 +198,7 @@
     "customer_name":"Danielle Steele",
     "category":"Product Defect",
     "description":"Customer Danielle Steele (larry16@example.net) reported: product defect. Customer is negative. Customer mentioned switching to ValueMax. State young big tree experience bar world.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"ValueMax"
@@ -210,7 +210,7 @@
     "customer_name":"Erin Daniels",
     "category":"Product Defect",
     "description":"Customer Erin Daniels (denisecarpenter@example.net) reported: product defect. Fear house kitchen energy next age catch car gas all cup.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -222,7 +222,7 @@
     "customer_name":"Alec Ryan",
     "category":"Billing",
     "description":"Customer Alec Ryan (jeffrey10@example.org) reported: billing. Customer mentioned switching to ValueMax. Here couple adult edge thought eye forget audience remain role act idea.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":"ValueMax"
@@ -234,7 +234,7 @@
     "customer_name":"Tyler Montgomery",
     "category":"Billing",
     "description":"Customer Tyler Montgomery (jennifermitchell@example.org) reported: billing. Customer is very negative. Production act doctor name interest fill including why into member real media democratic interesting unit young.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -246,7 +246,7 @@
     "customer_name":"Tonya Roberts",
     "category":"Missing Items",
     "description":"Customer Tonya Roberts (davidanderson@example.org) reported: missing items. Customer is negative. Indeed hold look local cut line anyone arrive such reason drive draw win nearly prevent movement.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -258,7 +258,7 @@
     "customer_name":"Matthew Hays",
     "category":"General Inquiry",
     "description":"Customer Matthew Hays (michelleperez@example.net) reported: general inquiry. Customer is negative. Appear travel worker black else television industry dream.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -270,7 +270,7 @@
     "customer_name":"Ethan Ingram",
     "category":"General Inquiry",
     "description":"Customer Ethan Ingram (samantha88@example.net) reported: general inquiry. Customer is negative. Know education action well structure coach chance.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -282,7 +282,7 @@
     "customer_name":"Matthew Dalton",
     "category":"Product Defect",
     "description":"Customer Matthew Dalton (michelle78@example.com) reported: product defect. Customer is negative. Resource executive society necessary employee what our way image class let water.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -294,7 +294,7 @@
     "customer_name":"Ann Henderson",
     "category":"Missing Items",
     "description":"Customer Ann Henderson (christina66@example.org) reported: missing items. Customer is very negative. Inside history letter risk interesting hard world paper look.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -306,7 +306,7 @@
     "customer_name":"Shelly May",
     "category":"General Inquiry",
     "description":"Customer Shelly May (caseyelliott@example.net) reported: general inquiry. Customer is negative. Education Mrs ask until make happen usually happy get expert suggest three onto effort.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -318,7 +318,7 @@
     "customer_name":"Jeremy Adams",
     "category":"Damaged Goods",
     "description":"Customer Jeremy Adams (kevin90@example.com) reported: damaged goods. Note law product bad there house stock space garden strategy blood.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":false,
     "competitor_mentioned":null
@@ -330,7 +330,7 @@
     "customer_name":"Jose Bryant",
     "category":"Product Defect",
     "description":"Customer Jose Bryant (hansenemily@example.com) reported: product defect. Customer is negative. Share fact threat list expect radio decade actually.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -342,7 +342,7 @@
     "customer_name":"Barbara Massey DDS",
     "category":"Shipping Issue",
     "description":"Customer Barbara Massey DDS (kathy99@example.com) reported: shipping issue. Lawyer song pay focus save data lead trouble base.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -354,7 +354,7 @@
     "customer_name":"Melissa Gould PhD",
     "category":"Missing Items",
     "description":"Customer Melissa Gould PhD (jcolon@example.net) reported: missing items. Customer is very negative. Customer mentioned switching to PrimeGoods. Common system suffer turn bar fund where describe attention.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":"PrimeGoods"
@@ -366,7 +366,7 @@
     "customer_name":"Heather Rhodes",
     "category":"General Inquiry",
     "description":"Customer Heather Rhodes (grodgers@example.org) reported: general inquiry. Customer is very negative. Force option design radio pick together exist.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -378,7 +378,7 @@
     "customer_name":"Alan Mills",
     "category":"General Inquiry",
     "description":"Customer Alan Mills (mserrano@example.org) reported: general inquiry. Customer is very negative. Would wait realize spend benefit actually thank need.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -390,7 +390,7 @@
     "customer_name":"Cynthia Moore",
     "category":"Billing",
     "description":"Customer Cynthia Moore (tranchristopher@example.org) reported: billing. Onto image pass threat sign name outside because coach manager about charge natural.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -402,7 +402,7 @@
     "customer_name":"Richard Jones",
     "category":"Damaged Goods",
     "description":"Customer Richard Jones (schmidtjames@example.com) reported: damaged goods. Ready plant break effect necessary PM someone thousand form cell play sense mean director.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -414,7 +414,7 @@
     "customer_name":"Emily Collins",
     "category":"Shipping Issue",
     "description":"Customer Emily Collins (ihays@example.com) reported: shipping issue. Customer is negative. Candidate drive agent trial short study action threat eight them still behavior kitchen magazine.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -426,7 +426,7 @@
     "customer_name":"Martha Smith",
     "category":"Billing",
     "description":"Customer Martha Smith (butleromar@example.net) reported: billing. Hour let television today world Mr street state eat smile.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -438,7 +438,7 @@
     "customer_name":"Carlos Love",
     "category":"Product Defect",
     "description":"Customer Carlos Love (brian29@example.net) reported: product defect. Customer is negative. Up grow their carry one floor better attack to oil send.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -450,7 +450,7 @@
     "customer_name":"Keith Thomas",
     "category":"Product Defect",
     "description":"Customer Keith Thomas (marycochran@example.com) reported: product defect. Bar century executive local environmental degree there voice thing number loss majority when.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"positive",
     "resolved":true,
     "competitor_mentioned":null
@@ -462,7 +462,7 @@
     "customer_name":"Cheryl Moore",
     "category":"Product Defect",
     "description":"Customer Cheryl Moore (tjimenez@example.com) reported: product defect. Customer is negative. Sure population accept perhaps upon whose provide whose certain billion bar finish.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -474,7 +474,7 @@
     "customer_name":"Alisha Roberts",
     "category":"Billing",
     "description":"Customer Alisha Roberts (taylorkim@example.net) reported: billing. Customer is negative. Minute receive establish easy prepare voice a professional election hour your break method it talk court.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -486,7 +486,7 @@
     "customer_name":"Lindsey Lewis",
     "category":"Damaged Goods",
     "description":"Customer Lindsey Lewis (eddie35@example.com) reported: damaged goods. Customer is negative. Customer mentioned switching to ValueMax. Hotel majority have safe book reduce person music born as.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"ValueMax"
@@ -498,7 +498,7 @@
     "customer_name":"Dr. Sheila Henry",
     "category":"Billing",
     "description":"Customer Dr. Sheila Henry (raymond92@example.org) reported: billing. Customer is negative. Material style size summer office themselves model.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -510,7 +510,7 @@
     "customer_name":"Thomas Sanchez",
     "category":"Return Request",
     "description":"Customer Thomas Sanchez (vrhodes@example.org) reported: return request. Customer is negative. No view enjoy close fire same far should allow something however white.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -522,7 +522,7 @@
     "customer_name":"Jill Powers",
     "category":"Return Request",
     "description":"Customer Jill Powers (daughertypreston@example.com) reported: return request. Name space red front community seven effect.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -534,7 +534,7 @@
     "customer_name":"David Ortega",
     "category":"Return Request",
     "description":"Customer David Ortega (deborahwilliams@example.net) reported: return request. Customer is negative. Kitchen choice father modern sea remain everything term.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -546,7 +546,7 @@
     "customer_name":"Matthew Wright",
     "category":"Product Defect",
     "description":"Customer Matthew Wright (kimberly04@example.org) reported: product defect. Customer is negative. Interest measure down though month throughout light attorney.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -558,7 +558,7 @@
     "customer_name":"Raymond Oconnor",
     "category":"Product Defect",
     "description":"Customer Raymond Oconnor (sreid@example.com) reported: product defect. Different sometimes how in speak main still.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"positive",
     "resolved":true,
     "competitor_mentioned":null
@@ -570,7 +570,7 @@
     "customer_name":"Nicholas Waters",
     "category":"Return Request",
     "description":"Customer Nicholas Waters (mosleyeduardo@example.net) reported: return request. Customer is negative. Customer mentioned switching to BetterBuy. Turn group put arrive write her idea.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":"BetterBuy"
@@ -582,7 +582,7 @@
     "customer_name":"Natasha Williams",
     "category":"Product Defect",
     "description":"Customer Natasha Williams (swall@example.org) reported: product defect. Training radio treatment economic relationship yeah now fish weight keep.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -594,7 +594,7 @@
     "customer_name":"Sharon Martinez DVM",
     "category":"Billing",
     "description":"Customer Sharon Martinez DVM (dustinmorris@example.org) reported: billing. Customer is negative. Customer mentioned switching to PrimeGoods. Bar its politics project according later majority seat myself then well mouth project television.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"PrimeGoods"
@@ -606,7 +606,7 @@
     "customer_name":"Andrew Shaw MD",
     "category":"General Inquiry",
     "description":"Customer Andrew Shaw MD (sawyerscott@example.net) reported: general inquiry. Customer is negative. Customer mentioned switching to ValueMax. Your occur until focus population traditional together you identify.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"ValueMax"
@@ -618,7 +618,7 @@
     "customer_name":"Edwin Richardson",
     "category":"Product Defect",
     "description":"Customer Edwin Richardson (wwilkins@example.com) reported: product defect. Age book this determine attention herself money agree apply.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"positive",
     "resolved":false,
     "competitor_mentioned":null
@@ -630,7 +630,7 @@
     "customer_name":"Matthew Miller",
     "category":"Billing",
     "description":"Customer Matthew Miller (michele28@example.org) reported: billing. Least interview contain huge drive employee according two main little since girl allow both suddenly.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -642,7 +642,7 @@
     "customer_name":"Jeremy Mitchell",
     "category":"Return Request",
     "description":"Customer Jeremy Mitchell (pyoung@example.com) reported: return request. Customer is negative. Apply take evening skin nice attack build law once usually value affect on group record baby.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -654,7 +654,7 @@
     "customer_name":"Mary Jones",
     "category":"General Inquiry",
     "description":"Customer Mary Jones (reginajenkins@example.net) reported: general inquiry. Customer is negative. Hit later focus foreign yet mean sure up experience able visit sometimes.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -666,7 +666,7 @@
     "customer_name":"James Cole",
     "category":"Return Request",
     "description":"Customer James Cole (iaguilar@example.net) reported: return request. Customer is negative. Perform often once past hot threat lawyer figure task election.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -678,7 +678,7 @@
     "customer_name":"Daniel Barton",
     "category":"Damaged Goods",
     "description":"Customer Daniel Barton (dennis88@example.org) reported: damaged goods. Customer is negative. These carry surface young activity issue tell indicate else vote these two church shake.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -690,7 +690,7 @@
     "customer_name":"Kelsey Fowler",
     "category":"Shipping Issue",
     "description":"Customer Kelsey Fowler (lcarr@example.org) reported: shipping issue. Customer is negative. True writer attack run stand their about base.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -702,7 +702,7 @@
     "customer_name":"Steven Scott",
     "category":"Missing Items",
     "description":"Customer Steven Scott (williamsjohn@example.net) reported: missing items. Customer is negative. Certainly report well college something summer know car week.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -714,7 +714,7 @@
     "customer_name":"Daniel Flynn",
     "category":"Billing",
     "description":"Customer Daniel Flynn (william46@example.net) reported: billing. Customer is negative. Ever matter claim collection television stand own staff senior decision.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -726,7 +726,7 @@
     "customer_name":"Beverly Bush",
     "category":"General Inquiry",
     "description":"Customer Beverly Bush (bensonstanley@example.org) reported: general inquiry. Billion meeting street teach painting per than thus appear report night continue program south model movement.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -738,7 +738,7 @@
     "customer_name":"Amy Wilson",
     "category":"Missing Items",
     "description":"Customer Amy Wilson (erik84@example.net) reported: missing items. Customer is negative. International defense whether best enter actually ready role administration site recognize maybe sell.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -750,7 +750,7 @@
     "customer_name":"Cynthia Haas",
     "category":"Product Defect",
     "description":"Customer Cynthia Haas (daisymccarty@example.net) reported: product defect. Customer is negative. Mean design film sure give fill morning above.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -762,7 +762,7 @@
     "customer_name":"Matthew Wright",
     "category":"Return Request",
     "description":"Customer Matthew Wright (kimberly04@example.org) reported: return request. Customer is negative. More far special stand effect street stuff task half article key.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -774,7 +774,7 @@
     "customer_name":"Nicholas Grant",
     "category":"Billing",
     "description":"Customer Nicholas Grant (leescott@example.com) reported: billing. Customer is very negative. Against accept position carry moment personal perform already or phone dark early need.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -786,7 +786,7 @@
     "customer_name":"Steven Miller",
     "category":"Product Defect",
     "description":"Customer Steven Miller (jessebenson@example.net) reported: product defect. Group society write baby you poor sense raise teacher feel official establish city section record from.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -798,7 +798,7 @@
     "customer_name":"Charles Schmidt",
     "category":"Product Defect",
     "description":"Customer Charles Schmidt (georgemiller@example.com) reported: product defect. Customer is very negative. Customer mentioned switching to ValueMax. Anything thus everyone image contain appear city expert strategy ahead than party poor guy debate.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":false,
     "competitor_mentioned":"ValueMax"
@@ -810,7 +810,7 @@
     "customer_name":"Karen Collins",
     "category":"Billing",
     "description":"Customer Karen Collins (don79@example.net) reported: billing. Customer is negative. Something entire sometimes hand say man music himself beyond audience service foreign.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -822,7 +822,7 @@
     "customer_name":"Matthew Miller",
     "category":"Shipping Issue",
     "description":"Customer Matthew Miller (michele28@example.org) reported: shipping issue. Customer mentioned switching to AcmeCorp. Argue southern perhaps surface continue hold great husband sea area reduce population attention alone.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":"AcmeCorp"
@@ -834,7 +834,7 @@
     "customer_name":"Lisa Glenn",
     "category":"Shipping Issue",
     "description":"Customer Lisa Glenn (washingtonjames@example.com) reported: shipping issue. Customer is negative. Customer mentioned switching to ValueMax. Have across be fine almost collection break least machine American trouble other newspaper stage.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"ValueMax"
@@ -846,7 +846,7 @@
     "customer_name":"Melissa Mccormick",
     "category":"Shipping Issue",
     "description":"Customer Melissa Mccormick (johnnycruz@example.net) reported: shipping issue. Customer is negative. Individual road hotel significant education side young buy.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -858,7 +858,7 @@
     "customer_name":"Karina Kim",
     "category":"Return Request",
     "description":"Customer Karina Kim (amy73@example.net) reported: return request. Customer is negative. Example article available claim create kid team create economy wait strong Mr military possible.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -870,7 +870,7 @@
     "customer_name":"Cassandra Serrano",
     "category":"Damaged Goods",
     "description":"Customer Cassandra Serrano (mjohnson@example.org) reported: damaged goods. Customer is negative. Customer mentioned switching to PrimeGoods. Left safe more argue available break responsibility play company standard nor herself.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"PrimeGoods"
@@ -882,7 +882,7 @@
     "customer_name":"Chad Rodriguez",
     "category":"Missing Items",
     "description":"Customer Chad Rodriguez (rwilliamson@example.net) reported: missing items. Customer mentioned switching to AcmeCorp. Approach see spend though over nearly contain hit idea hit level again risk economy there.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":false,
     "competitor_mentioned":"AcmeCorp"
@@ -894,7 +894,7 @@
     "customer_name":"Meredith Hill",
     "category":"Missing Items",
     "description":"Customer Meredith Hill (blackjames@example.org) reported: missing items. Billion prepare eye energy challenge inside natural month body sure.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -906,7 +906,7 @@
     "customer_name":"Tony Vazquez",
     "category":"Shipping Issue",
     "description":"Customer Tony Vazquez (amydavenport@example.net) reported: shipping issue. Customer is negative. Collection analysis region term more big cell project station Democrat tonight similar then writer risk.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -918,7 +918,7 @@
     "customer_name":"Angela Jackson",
     "category":"Product Defect",
     "description":"Customer Angela Jackson (davissharon@example.com) reported: product defect. Customer is negative. Republican office thousand skin surface run expect really sure street risk.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -930,7 +930,7 @@
     "customer_name":"Robin Davidson",
     "category":"Missing Items",
     "description":"Customer Robin Davidson (myerskyle@example.org) reported: missing items. Development argue affect when get reason turn.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"positive",
     "resolved":true,
     "competitor_mentioned":null
@@ -942,7 +942,7 @@
     "customer_name":"Jennifer Smith",
     "category":"Product Defect",
     "description":"Customer Jennifer Smith (frankchan@example.com) reported: product defect. Customer is negative. Hundred front why different ever marriage black nearly attorney.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -954,7 +954,7 @@
     "customer_name":"Susan Russell",
     "category":"Shipping Issue",
     "description":"Customer Susan Russell (bmccoy@example.com) reported: shipping issue. Customer is negative. Customer mentioned switching to PrimeGoods. Reach painting international speak situation alone difficult would executive back speech word season debate police administration.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"PrimeGoods"
@@ -966,7 +966,7 @@
     "customer_name":"Benjamin Welch",
     "category":"Shipping Issue",
     "description":"Customer Benjamin Welch (carlosjohnson@example.com) reported: shipping issue. Customer is negative. Actually spring indeed international skill list structure.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -978,7 +978,7 @@
     "customer_name":"Daniel Haley",
     "category":"Return Request",
     "description":"Customer Daniel Haley (allen20@example.net) reported: return request. Page affect so within talk candidate move.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -990,7 +990,7 @@
     "customer_name":"Cynthia Haas",
     "category":"Missing Items",
     "description":"Customer Cynthia Haas (daisymccarty@example.net) reported: missing items. Offer despite someone tend fall ago their along manager author though should sign or.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":false,
     "competitor_mentioned":null
@@ -1002,7 +1002,7 @@
     "customer_name":"Kimberly May",
     "category":"Damaged Goods",
     "description":"Customer Kimberly May (avilabrenda@example.net) reported: damaged goods. Customer is negative. Customer mentioned switching to PrimeGoods. Minute receive room brother here hot image financial window.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"PrimeGoods"
@@ -1014,7 +1014,7 @@
     "customer_name":"Jeremy Anderson",
     "category":"Return Request",
     "description":"Customer Jeremy Anderson (dberger@example.org) reported: return request. Year indicate window ask partner car set since market final.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -1026,7 +1026,7 @@
     "customer_name":"Debra Wong",
     "category":"Damaged Goods",
     "description":"Customer Debra Wong (nwilson@example.net) reported: damaged goods. Customer is negative. Property somebody range huge sister war part federal effort me up measure trial record side professor.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -1038,7 +1038,7 @@
     "customer_name":"Andrew Brown",
     "category":"Return Request",
     "description":"Customer Andrew Brown (andrewwoods@example.com) reported: return request. Southern weight realize education price any important.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -1050,7 +1050,7 @@
     "customer_name":"Debra Wong",
     "category":"Shipping Issue",
     "description":"Customer Debra Wong (nwilson@example.net) reported: shipping issue. Customer is negative. Person table doctor music decade bag effort.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -1062,7 +1062,7 @@
     "customer_name":"David Reeves",
     "category":"Billing",
     "description":"Customer David Reeves (melaniejennings@example.com) reported: billing. Customer is negative. Customer mentioned switching to QuickShip. Material run identify contain buy model operation education party research college east play dream plan foreign.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"QuickShip"
@@ -1074,7 +1074,7 @@
     "customer_name":"Kayla Cameron",
     "category":"Billing",
     "description":"Customer Kayla Cameron (jennifer83@example.org) reported: billing. During country town design imagine air discover candidate eat much choice event.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -1086,7 +1086,7 @@
     "customer_name":"Tammy Ponce",
     "category":"Missing Items",
     "description":"Customer Tammy Ponce (daniellegarcia@example.com) reported: missing items. Customer is negative. Citizen experience officer speech itself fine marriage ball well economy not floor.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -1098,7 +1098,7 @@
     "customer_name":"Brian Cortez",
     "category":"Billing",
     "description":"Customer Brian Cortez (daviddavis@example.com) reported: billing. Customer is negative. Customer mentioned switching to AcmeCorp. Wind that at pull gun lose central son wind garden what throw will majority.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":"AcmeCorp"
@@ -1110,7 +1110,7 @@
     "customer_name":"Ethan Ingram",
     "category":"Product Defect",
     "description":"Customer Ethan Ingram (samantha88@example.net) reported: product defect. Customer is negative. Consumer condition account over serve very bill.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -1122,7 +1122,7 @@
     "customer_name":"Matthew Lopez",
     "category":"Damaged Goods",
     "description":"Customer Matthew Lopez (robinrussell@example.com) reported: damaged goods. Customer is very negative. Real foot kind top a baby civil.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -1134,7 +1134,7 @@
     "customer_name":"Eric Hill",
     "category":"Shipping Issue",
     "description":"Customer Eric Hill (bellcharles@example.com) reported: shipping issue. Customer is negative. But plan news course democratic program themselves technology white very person item.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":true,
     "competitor_mentioned":null
@@ -1146,7 +1146,7 @@
     "customer_name":"Carrie Valdez",
     "category":"Return Request",
     "description":"Customer Carrie Valdez (briana18@example.com) reported: return request. Customer is very negative. Customer mentioned switching to QuickShip. Message can cultural administration walk begin teacher themselves move especially modern.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"very_negative",
     "resolved":false,
     "competitor_mentioned":"QuickShip"
@@ -1158,7 +1158,7 @@
     "customer_name":"Christina Vargas",
     "category":"General Inquiry",
     "description":"Customer Christina Vargas (nsmith@example.org) reported: general inquiry. Message add result plant most detail allow billion type capital political.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -1170,7 +1170,7 @@
     "customer_name":"Shelly May",
     "category":"Shipping Issue",
     "description":"Customer Shelly May (caseyelliott@example.net) reported: shipping issue. Customer is negative. However once fund matter wonder kind represent strategy bar see chair from paper get nation imagine.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"negative",
     "resolved":false,
     "competitor_mentioned":null
@@ -1182,7 +1182,7 @@
     "customer_name":"Douglas Gregory",
     "category":"Missing Items",
     "description":"Customer Douglas Gregory (trose@example.org) reported: missing items. Affect tend tree director recently benefit book.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"neutral",
     "resolved":true,
     "competitor_mentioned":null
@@ -1194,7 +1194,7 @@
     "customer_name":"Amber Kim",
     "category":"Product Defect",
     "description":"Customer Amber Kim (acosta@example.com) reported: product defect. Chance fear share himself learn way day mention site away special would record stage single.",
-    "date":"2026-03-28",
+    "date":"2026-03-30",
     "sentiment":"positive",
     "resolved":true,
     "competitor_mentioned":null

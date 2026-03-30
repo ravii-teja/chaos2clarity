@@ -18,12 +18,12 @@
         "avg_ship_days": 6.956629491945477
       },
       {
-        "category": "Food",
-        "avg_ship_days": 6.833022967101179
-      },
-      {
         "category": "Clothing",
         "avg_ship_days": 7.010236724248241
+      },
+      {
+        "category": "Food",
+        "avg_ship_days": 6.833022967101179
       }
     ],
     "columns": [

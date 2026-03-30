@@ -10,8 +10,8 @@
         "ontime_rate": 85.98
       },
       {
-        "stage": "Closed Won",
-        "ontime_rate": 84.96
+        "stage": "Prospecting",
+        "ontime_rate": 86.07
       },
       {
         "stage": "Negotiation",
@@ -22,8 +22,8 @@
         "ontime_rate": 86.03
       },
       {
-        "stage": "Prospecting",
-        "ontime_rate": 86.07
+        "stage": "Closed Won",
+        "ontime_rate": 84.96
       },
       {
         "stage": "Closed Lost",

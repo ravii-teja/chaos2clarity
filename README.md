@@ -19,46 +19,40 @@ C2C integrates four mechanisms:
 
 ## 📊 Experiments
 
-All experiments run on **Google Colab** for reproducibility:
+All computational experiments run completely natively using the **local open-source Ollama framework**, ensuring zero API cost, full data privacy, and end-to-end reproducibility.
 
 | Notebook | Purpose | Est. Time |
 |---|---|---|
-| `00_data_generation.ipynb` | Generate 3-source retail data + 50-question suite | 30 min |
-| `04_experiment_runner.ipynb` | Run all 8 experiments | 12-16 hrs |
+| `c2c_experiments.ipynb` | The single master pipeline. Generates 3-source retail data, builds the test suite, initializes models, and runs all 8 experiments + plots. | ~6-10 hrs (varies by Mac RAM) |
 
 ### Quick Start
 
-1. **Open in Colab:** Upload notebooks to Google Colab
-2. **Set API Keys:** Add `GOOGLE_API_KEY` (Gemini 1.5 Pro) and `OPENAI_API_KEY` (GPT-4o) to Colab Secrets
-3. **Run Notebook 00** first to generate the data environment
-4. **Run Notebook 04** to execute all experiments
+1. **Install Ollama:** Download from [ollama.com](https://ollama.com) and run `ollama serve` in the terminal.
+2. **Pull the Model:** Run `ollama pull qwen2.5-coder:3b` (the default mathematically optimized local coder).
+3. **Run the Notebook:** Open `notebooks/c2c_experiments.ipynb` in Jupyter/VSCode and simply select **"Run All"**. 
+4. **Publish:** The notebook automatically generates all 5 publication-ready figures to `figures/` and metrics to `eval/results/`.
 
-## 📁 Project Structure
+## 📁 Project Module Breakdown
 
-```
-chaos2clarity/
-├── notebooks/
-│   ├── 00_data_generation.ipynb      # Data + gold annotations
-│   └── 04_experiment_runner.ipynb    # All 8 experiments
-├── src/
-│   ├── data_generator.py             # Synthetic 3-source retail data
-│   ├── semantic_layer.py             # Mechanism I
-│   ├── orchestration.py              # Mechanism II (pipeline + ablations)
-│   ├── vector_store.py               # Mechanism III
-│   ├── feedback_loop.py              # Mechanism IV
-│   ├── baselines.py                  # B1, B2, B3 baselines
-│   ├── eval_harness.py               # Evaluation infrastructure
-│   ├── stats.py                      # Statistical tests
-│   └── prompts.py                    # All prompt templates
-├── eval/
-│   ├── questions/                     # 50-question BI suite (JSON)
-│   ├── gold_semantic_model.json
-│   └── results/                       # Experiment outputs
-├── data/                              # Generated data files
-├── figures/                           # Publication figures
-├── requirements.txt
-└── README.md
-```
+The framework is highly modular. The following scripts inside the `src/` directory handle the core scientific mechanisms:
+
+### 1. Data & Environment Setup
+*   **`data_generator.py`**: Generates simulated uncurated enterprise data (Salesforce, CSVs, customer logs) and builds `retail.duckdb`.
+*   **`llm_client.py`**: The unified local LLM engine connecting perfectly to Ollama without rate limits.
+
+### 2. The Core Architecture (C2C Framework)
+*   **`semantic_layer.py`**: Defines the "Gold" mathematical graph $\mathcal{S}$ and the Automated Synthesis Engine (Mechanism I) that dynamically maps schemas.
+*   **`vector_store.py`**: A ChromaDB wrapper (Mechanism II) that persists verified past SQL executions for Few-Shot prompting.
+*   **`feedback_loop.py`**: The self-improvement "brain" (Mechanism IV). Processes successes ($f_{sql}$) and failures ($f_{qrm}$) to iteratively update graph weights ($\kappa$).
+*   **`prompts.py`**: Highly engineered prompt templates simulating a Planner, SQL Generator, and Validator.
+
+### 3. Multi-Agent Pipelines & Baselines
+*   **`orchestration.py`**: Defines the master `C2CPipeline` and systematic architecture ablations (`C2CNoPlanner`, `C2CNoValidator`, etc.) to prove necessity.
+*   **`baselines.py`**: Defines static zero-shot LLMs ($\mathfrak{B}_1$ Direct LLM, $\mathfrak{B}_2$ Schema-Aware) used as null-hypothesis comparisons.
+
+### 4. Evaluation & Science
+*   **`eval_harness.py`**: The strict test engine. Validates EA and RC metrics dynamically against DuckDB.
+*   **`stats.py`**: Calculates formal *p-values* (McNemar’s Test) proving statistical significance.
 
 ## 🧪 Data Environment
 
