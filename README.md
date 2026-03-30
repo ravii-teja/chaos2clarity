@@ -31,12 +31,12 @@ All computational experiments run completely natively using the **local open-sou
    ```bash
    python -m venv .venv
    source .venv/bin/activate
-   pip install jupyter
+   pip install -r requirements.txt
    ```
 2. **Install Ollama:** Download from [ollama.com](https://ollama.com) and run `ollama serve` in the terminal.
-3. **Pull the Model:** Run `ollama pull qwen2.5-coder:3b` (the default mathematically optimized local coder).
-4. **Run the Notebook:** Open `notebooks/c2c_experiments.ipynb` in Jupyter/VSCode. The first cell will automatically analyze your environment and `pip install` any remaining missing dependencies (DuckDB, ChromaDB, Pandas, etc.) into your active `.venv`.
-5. **Publish:** Select **"Run All"**. The notebook automatically generates all 5 publication-ready figures to `figures/` and metrics to `eval/results/`.
+3. **Pull the Model:** Run `ollama pull qwen2.5-coder:3b` (the mathematically optimized local coder).
+4. **Run the Notebook:** Open `notebooks/c2c_experiments.ipynb` in Jupyter/VSCode using your new `.venv` kernel. 
+5. **Execute:** Select **"Run All"**. The notebook will automatically interact with Ollama, run all 8 experiments, and generate all publication-ready figures to `/figures/`.
 
 ## 📁 Project Module Breakdown
 
