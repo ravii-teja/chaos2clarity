@@ -51,3 +51,6 @@ run_experiments.py
 run_alpha_sensitivity.py
 notebooks/00_data_generation.ipynb
 notebooks/04_experiment_runner.ipynb
+
+# Mock/Testing Notebooks
+*mock*.ipynb
