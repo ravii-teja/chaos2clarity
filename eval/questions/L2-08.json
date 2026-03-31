@@ -6,56 +6,52 @@
   "gold_result": {
     "rows": [
       {
-        "month": "2025-03-01 00:00:00",
-        "monthly_revenue": "44175.03"
-      },
-      {
         "month": "2025-04-01 00:00:00",
-        "monthly_revenue": "1009102.72"
+        "monthly_revenue": "1016490.18"
       },
       {
         "month": "2025-05-01 00:00:00",
-        "monthly_revenue": "1036453.13"
+        "monthly_revenue": "1036424.38"
       },
       {
         "month": "2025-06-01 00:00:00",
-        "monthly_revenue": "967060.96"
+        "monthly_revenue": "959471.21"
       },
       {
         "month": "2025-07-01 00:00:00",
-        "monthly_revenue": "1100606.56"
+        "monthly_revenue": "1129639.82"
       },
       {
         "month": "2025-08-01 00:00:00",
-        "monthly_revenue": "1104415.19"
+        "monthly_revenue": "1092262.59"
       },
       {
         "month": "2025-09-01 00:00:00",
-        "monthly_revenue": "951107.02"
+        "monthly_revenue": "958259.92"
       },
       {
         "month": "2025-10-01 00:00:00",
-        "monthly_revenue": "1124673.09"
+        "monthly_revenue": "1110186.03"
       },
       {
         "month": "2025-11-01 00:00:00",
-        "monthly_revenue": "1090458.40"
+        "monthly_revenue": "1071172.17"
       },
       {
         "month": "2025-12-01 00:00:00",
-        "monthly_revenue": "1108226.01"
+        "monthly_revenue": "1132338.55"
       },
       {
         "month": "2026-01-01 00:00:00",
-        "monthly_revenue": "996769.75"
+        "monthly_revenue": "984935.94"
       },
       {
         "month": "2026-02-01 00:00:00",
-        "monthly_revenue": "873785.86"
+        "monthly_revenue": "878237.37"
       },
       {
         "month": "2026-03-01 00:00:00",
-        "monthly_revenue": "1016761.17"
+        "monthly_revenue": "1054176.73"
       }
     ],
     "columns": [
