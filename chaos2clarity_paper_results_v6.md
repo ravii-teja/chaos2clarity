@@ -104,7 +104,7 @@ where $\text{RC}(\cdot)$ is result correctness, $\bar{L}$ is mean end-to-end lat
 
 ## 3. Contributions
 
-To our knowledge, C2C is the first system to make the following six contributions in a single deployable architecture:
+To our knowledge, C2C is the first system to make the following seven contributions in a single deployable architecture:
 
 - **C1 — Formal self-improving semantic orchestration framework.** A formal definition of the semantic synthesis and feedback refinement problems, unifying automated $\mathcal{S}$ construction from uncurated $\mathcal{D}$ with a continuous learning loop $\delta$ updating $\mathcal{S}$ and $\mathcal{V}$ from four structured feedback signal types. This extends LLM-assisted metadata enrichment [21, 22] and schema matching [19] to a self-improving BI pipeline.
 
@@ -117,6 +117,8 @@ To our knowledge, C2C is the first system to make the following six contribution
 - **C5 — Working prototype and error taxonomy.** A deployed prototype over a realistic three-source retail enterprise environment and a five-class error taxonomy (E1–E5) derived from prototype operation, grounding the evaluation design.
 
 - **C6 — Eight-experiment evaluation protocol.** A structured evaluation framework with eight experiments mapped directly to the four architectural claims, with explicit falsifiable predictions, ablation variants, and dataset specifications.
+
+- **C7 — Zero-Knowledge Start Resilience.** An architectural demonstration proving that the orchestration pipeline can safely survive complete, unhandled LLM JSON syntax hallucinations during initialization (resulting in an empty semantic graph $\mathcal{S} = \emptyset$) by relying exclusively on its continuous learning loop to mathematically rebuild the missing operational context from scratch, preventing catastrophic failure states.
 
 ---
 
