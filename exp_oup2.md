@@ -3,6 +3,7 @@
 This document encapsulates the verified empirical metrics from the Jupyter notebook evaluation suite, accompanied by an architectural analysis of exactly *why* the metrics behaved this way across the 3B parameter parameter (Qwen 2.5) regime.
 
 ## 1. Baseline Comparisons (Experiment 1 & 2)
+*🎯 **Paper Placement:** Embed this table and narrative directly into **"Section 8.2: Experiment 1: Baseline vs. C2C"** and **"Section 8.3: Experiment 2"** of `chaos2clarity_paper_results_v6.md`.*
 
 | System Variant | Execution Accuracy (EA) | Result Correctness (RC) | Avg Latency (P50) |
 |---|---|---|---|
@@ -16,6 +17,7 @@ This document encapsulates the verified empirical metrics from the Jupyter noteb
 > Smaller LLMs often write syntactically valid SQL (high EA) that pulls data from the wrong logical join (low RC). By inserting an explicit Semantic Validator and separating the Retrieval from Execution, C2C suppresses hallucinated column joins, prioritizing correct answers over simply getting *an* answer, though it unavoidably inherits a 17x latency penalty from the LLM routing overhead.
 
 ## 2. Component Ablation Study (Experiment 3)
+*🎯 **Paper Placement:** Embed this into **"Section 8.4: Experiment 3: Agent Ablation Study"**. The explanation perfectly addresses the unpredictable behavior of 3B parameter planners.*
 
 | Pipeline Variant | Execution Accuracy (EA) | Result Correctness (RC) | Avg Latency (P50) |
 |---|---|---|---|
@@ -30,6 +32,7 @@ This document encapsulates the verified empirical metrics from the Jupyter noteb
 > Why? Because 3B models lack the deep contextual reasoning required to map out complex JSON dependency trees proactively. Their "plans" are often slightly flawed, which cascades into misdirecting the downstream agents. Stripping out the explicit Planner and allowing the SQL Generator to directly act on the Semantic Graph eliminates this "false compass" effect. Conversely, removing the Validator or Retry agents causes immediate accuracy drops, proving those specific fail-safes are universally beneficial regardless of model size.
 
 ## 3. Feedback Loop Learning Curve (Experiment 5)
+*🎯 **Paper Placement:** Embed this directly into **"Section 8.6: Experiment 5: Feedback Learning Loop"** and strongly summarize it in **"Section 9: Discussion"** as the core novel finding.*
 
 | Query Checkpoint | C2C-Full EA | ABL-NoFeedback EA |
 |---|---|---|
