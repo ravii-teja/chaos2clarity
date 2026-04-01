@@ -1,28 +1,28 @@
 {
   "C2C-Full": {
     "T50": {
-      "first_pass": 0.66,
-      "EA": 0.76,
-      "E1": 0.2,
-      "V_size": 38
+      "first_pass": 0.62,
+      "EA": 0.7,
+      "E1": 0.24,
+      "V_size": 35
     },
     "T100": {
-      "first_pass": 0.84,
-      "EA": 0.84,
-      "E1": 0.14,
-      "V_size": 42
+      "first_pass": 0.8,
+      "EA": 0.8,
+      "E1": 0.2,
+      "V_size": 40
     },
     "T150": {
-      "first_pass": 0.82,
-      "EA": 0.84,
+      "first_pass": 0.88,
+      "EA": 0.9,
       "E1": 0.08,
-      "V_size": 42
+      "V_size": 45
     },
     "T200": {
-      "first_pass": 0.86,
-      "EA": 0.88,
-      "E1": 0.06,
-      "V_size": 44
+      "first_pass": 0.9,
+      "EA": 0.9,
+      "E1": 0.04,
+      "V_size": 45
     }
   },
   "ABL-NoVector": {

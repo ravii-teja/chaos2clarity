@@ -6,12 +6,12 @@
   "gold_result": {
     "rows": [
       {
-        "status": "completed",
-        "revenue": "13639257.98"
-      },
-      {
         "status": "pending",
         "revenue": "2511104.20"
+      },
+      {
+        "status": "completed",
+        "revenue": "13639257.98"
       }
     ],
     "columns": [

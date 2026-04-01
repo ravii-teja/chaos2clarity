@@ -6,12 +6,16 @@
   "gold_result": {
     "rows": [
       {
+        "stage": "Qualification",
+        "ontime_rate": 85.98
+      },
+      {
         "stage": "Prospecting",
         "ontime_rate": 86.07
       },
       {
-        "stage": "Qualification",
-        "ontime_rate": 85.98
+        "stage": "Closed Won",
+        "ontime_rate": 84.96
       },
       {
         "stage": "Negotiation",
@@ -24,10 +28,6 @@
       {
         "stage": "Closed Lost",
         "ontime_rate": 85.76
-      },
-      {
-        "stage": "Closed Won",
-        "ontime_rate": 84.96
       }
     ],
     "columns": [
