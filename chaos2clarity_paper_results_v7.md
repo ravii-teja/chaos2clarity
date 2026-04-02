@@ -415,6 +415,9 @@ Each question has: natural language prompt, gold SQL (manually written), gold re
 | 𝔅₂: Schema-aware LLM | 46.7% | 73.3% | 40.0% | 90.0% | **62.0%** | **20.0%** | 3,254 |
 | C2C-Full | **86.7%** | **86.7%** | 20.0% | 50.0% | **66.0%** | **30.0%** | 51,419 |
 
+![Semantic Orchestration Advantage](figures/fig3_semantic_improvement.png)
+*Figure 3. Comparative analysis of execution accuracy and result correctness across complexity tiers.*
+
 *Table 2. Experiment 1 results. C2C-Full dominates on structured queries (L1+L2: 87% vs 60–80%) with RC nearly doubling. L3 cross-source remains equally challenging for all systems at this model scale.*
 
 **Result analysis:** Single-pass EA improvement is +6pp over 𝔅₁. While below the +25pp originally hypothesized for enterprise-grade models, this exceeds the 5pp failure threshold. Critically, **Result Correctness nearly doubles** (16% → 30%, McNemar p=0.039, statistically significant). C2C's advantage concentrates on L1+L2 structured queries, where the semantic model correctly grounds column references.
@@ -495,6 +498,9 @@ Retry contributes +2pp to RC (28% → 30%) confirming that error-informed re-gen
 | T=150 (batch 3) | **85.0%** (85.0 ± 1.7) | 58.0% (58.0 ± 0.0) | 9.5% (9.5 ± 2.6) | 38.0% (38.0 ± 0.0) |
 | T=200 (batch 4) | **87.5%** (87.5 ± 3.0) | **58.0%** (58.0 ± 0.0) | **7.0%** (7.0 ± 1.7) | **38.0%** (38.0 ± 0.0) |
 
+![Feedback Learning Curve](figures/exp5_learning_curve.png)
+*Figure 4. Empirical learning curve (EA and E1) over 200 operational queries. Shaded area represents standard deviation across 4 independent runs.*
+
 *Table 7. Learning curve results (median values shown in bold; mean ± std across 4 independent runs shown in parentheses). ABL-NoFeedback shows zero variance, confirming deterministic frozen behavior.*
 
 **Result analysis: Prediction confirmed.** EA(C2C-Full, T=200) = 87.5% ± 3.0 ≥ EA(C2C-Full, T=50) + 5pp = 79.0%. Actual cumulative improvement compared to frozen baseline: **+29.5pp** (≥5× the predicted minimum). ABL-NoFeedback is totally mathematically flat at 58.0% ± 0.0 across all execution subsets. The near-zero variance across 4 runs confirms the stability of the self-improvement effect.
@@ -502,6 +508,9 @@ Retry contributes +2pp to RC (28% → 30%) confirming that error-informed re-gen
 **Feedback loop statistics (T=200):** 415 total feedback signals processed; 568 κ updates applied mathematically via algorithm iteration; 12 few-shot E1 corrections and 12 E2 corrections injected; 24 schema enrichment proposals generated. E1 hallucination rate drops dramatically from 38.0% to 7.0% (−31.0pp) while E5 cross-source failure drops from 8% to 2%.
 
 **κ convergence (empirical validation of Proposition 2):** Entity confidence values for frequently queried entities (Customer, Order, Product, Return, Delivery) converge from their initial range of 0.11–0.61 to a stable range of 0.61–0.79 by T=200, consistent with the predicted convergence to true confirmation rates.
+
+![Kappa Convergence Profile](figures/fig4_kappa_evolution.png)
+*Figure 5. Convergence of entity confidence κ towards stable empirical truth over simulation lifetime.*
 
 ### 8.7 Experiment 6: Vector Grounding Impact
 
@@ -533,6 +542,9 @@ Retry contributes +2pp to RC (28% → 30%) confirming that error-informed re-gen
 | ABL-Mono | 24.0 | 38.0 | 0.0 | 2.0 | 14.0 | 60.0 |
 | C2C-Full (T=50) | 24.0 | 36.0 | 0.0 | 2.0 | 8.0 | 66.0 |
 | C2C-Full (T=200) | **7.0** | **3.5** | **0.0** | **0.0** | **2.0** | **87.5** |
+
+![Error Taxonomy Distribution](figures/exp7_error_taxonomy.png)
+*Figure 6. Evolution of error class distribution from T=50 to T=200, showing the suppression of schema hallucinations and cross-source failures.*
 
 *Table 9. Error taxonomy distribution. E1 and E5 are progressively suppressed by the feedback loop; E2 becomes the dominant residual error class.*
 
@@ -798,6 +810,9 @@ Learning rate α sensitivity analysis over {0.05, 0.10, 0.15, 0.20, 0.30} on 20-
 | 0.10 | 77.8% | 22.2% | 685s |
 | 0.15 | 77.8% | 16.7% | 645s |
 | **0.20 (optimal limit)** | **100.0%** | **0.0%** | **527s** |
+
+![Hyperparameter Sensitivity Analysis](figures/appendix_f_alpha_sensitivity.png)
+*Figure 7. Performance and latency trade-off across the α decay parameter sweep.*
 | 0.30 | 100.0% | 0.0% | 955s |
 
 *Conclusion:* An algorithmic decay weight of `α = 0.20` stands as the optimal hyperparameter profile, forcing the `Qwen-2.5 3B` framework to structurally unlearn hallucination dependencies entirely (0.0% E1) while maximizing convergence velocity (100% Validation Hit Rate at the lowest gross runtime).*
