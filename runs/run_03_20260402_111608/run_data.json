@@ -1,0 +1,210 @@
+{
+  "run_id": 3,
+  "timestamp": "20260402_111608",
+  "checkpoints": {
+    "C2C-Full": {
+      "T50": {
+        "EA": 0.76,
+        "RC": 0.36,
+        "E1": 0.2,
+        "E2": 0.4,
+        "E3": 0.0,
+        "E5": 0.04,
+        "first_pass": 0.66,
+        "P50_ms": 49549.93091701181
+      },
+      "T100": {
+        "EA": 0.84,
+        "RC": 0.36,
+        "E1": 0.14,
+        "E2": 0.48,
+        "E3": 0.0,
+        "E5": 0.02,
+        "first_pass": 0.84,
+        "P50_ms": 32518.66020799207
+      },
+      "T150": {
+        "EA": 0.84,
+        "RC": 0.38,
+        "E1": 0.08,
+        "E2": 0.46,
+        "E3": 0.0,
+        "E5": 0.08,
+        "first_pass": 0.82,
+        "P50_ms": 38382.46687500214
+      },
+      "T200": {
+        "EA": 0.88,
+        "RC": 0.36,
+        "E1": 0.06,
+        "E2": 0.52,
+        "E3": 0.0,
+        "E5": 0.06,
+        "first_pass": 0.86,
+        "P50_ms": 32220.28437498375
+      }
+    },
+    "ABL-NoFeedback": {
+      "T50": {
+        "EA": 0.58,
+        "RC": 0.3,
+        "E1": 0.38,
+        "E2": 0.28,
+        "E3": 0.0,
+        "E5": 0.04,
+        "first_pass": 0.5,
+        "P50_ms": 29510.31050000165
+      },
+      "T100": {
+        "EA": 0.58,
+        "RC": 0.32,
+        "E1": 0.38,
+        "E2": 0.26,
+        "E3": 0.0,
+        "E5": 0.04,
+        "first_pass": 0.5,
+        "P50_ms": 39846.09662499861
+      },
+      "T150": {
+        "EA": 0.58,
+        "RC": 0.3,
+        "E1": 0.38,
+        "E2": 0.28,
+        "E3": 0.0,
+        "E5": 0.04,
+        "first_pass": 0.5,
+        "P50_ms": 24264.821124990704
+      },
+      "T200": {
+        "EA": 0.58,
+        "RC": 0.3,
+        "E1": 0.38,
+        "E2": 0.28,
+        "E3": 0.0,
+        "E5": 0.04,
+        "first_pass": 0.5,
+        "P50_ms": 24080.39145800285
+      }
+    }
+  },
+  "semantic_model_snapshots": {
+    "T50": {
+      "Customer": 0.24659553595054234,
+      "Order": 0.3424272052186591,
+      "Product": 0.3057970585550605,
+      "OrderItem": 1.0,
+      "SalesRep": 1.0,
+      "Return": 0.891625,
+      "Deal": 0.36460927503906243,
+      "SalesforceAccount": 1.0,
+      "Delivery": 0.6141249999999999
+    },
+    "T100": {
+      "Customer": 0.5944951548394991,
+      "Order": 0.7878599273881335,
+      "Product": 0.5955083075844988,
+      "OrderItem": 1.0,
+      "SalesRep": 0.617491946283203,
+      "Return": 0.6803317337441407,
+      "Deal": 0.17707263472339416,
+      "SalesforceAccount": 0.6720062499999999,
+      "Delivery": 0.7212053125
+    },
+    "T150": {
+      "Customer": 0.826535481367476,
+      "Order": 0.7342478673821555,
+      "Product": 0.864970027294222,
+      "OrderItem": 1.0,
+      "SalesRep": 0.7236379311896142,
+      "Return": 0.7282819736825196,
+      "Deal": 0.17707263472339416,
+      "SalesforceAccount": 0.41269583828124995,
+      "Delivery": 0.8287852125390625
+    },
+    "T200": {
+      "Customer": 0.8461864358137471,
+      "Order": 0.770803743420297,
+      "Product": 0.848310138394167,
+      "OrderItem": 1.0,
+      "SalesRep": 0.8003284052844962,
+      "Return": 0.8036837259856204,
+      "Deal": 0.17707263472339416,
+      "SalesforceAccount": 0.5007914625390625,
+      "Delivery": 0.910624810852969
+    }
+  },
+  "feedback_stats": {
+    "T50": {
+      "total_signals": 117,
+      "updates_applied": 170,
+      "pending_f_sql": 0,
+      "pending_f_usr": 0,
+      "pending_f_qrm": 0,
+      "pending_f_ins": 0,
+      "failure_patterns": {
+        "E2": 5,
+        "E1": 5
+      },
+      "refined_examples": {
+        "E2": 3,
+        "E1": 3
+      },
+      "enrichment_proposals": 8,
+      "enabled": true
+    },
+    "T100": {
+      "total_signals": 226,
+      "updates_applied": 318,
+      "pending_f_sql": 0,
+      "pending_f_usr": 0,
+      "pending_f_qrm": 0,
+      "pending_f_ins": 0,
+      "failure_patterns": {
+        "E2": 5,
+        "E1": 5
+      },
+      "refined_examples": {
+        "E2": 6,
+        "E1": 6
+      },
+      "enrichment_proposals": 13,
+      "enabled": true
+    },
+    "T150": {
+      "total_signals": 336,
+      "updates_applied": 446,
+      "pending_f_sql": 0,
+      "pending_f_usr": 0,
+      "pending_f_qrm": 0,
+      "pending_f_ins": 0,
+      "failure_patterns": {
+        "E2": 5,
+        "E1": 5
+      },
+      "refined_examples": {
+        "E2": 9,
+        "E1": 9
+      },
+      "enrichment_proposals": 18,
+      "enabled": true
+    },
+    "T200": {
+      "total_signals": 443,
+      "updates_applied": 566,
+      "pending_f_sql": 0,
+      "pending_f_usr": 0,
+      "pending_f_qrm": 0,
+      "pending_f_ins": 0,
+      "failure_patterns": {
+        "E2": 5,
+        "E1": 5
+      },
+      "refined_examples": {
+        "E2": 12,
+        "E1": 12
+      },
+      "enrichment_proposals": 24,
+      "enabled": true
+    }
+  }
+}
