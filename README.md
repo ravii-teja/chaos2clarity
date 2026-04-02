@@ -1,3 +1,7 @@
+
+![c2c-banner](https://github.com/user-attachments/assets/e8e6a2cd-8b10-4ce2-ab5c-d1f49304eeb3)
+
+
 # Chaos 2 Clarity (C2C)
 
 **A Self-Improving Semantic Orchestration Framework for LLM-Driven Business Intelligence over Heterogeneous, Uncurated Enterprise Data**
