@@ -31,6 +31,18 @@ While standard literature obsesses over **Execution Accuracy (EA)** (whether the
 
 ---
 
+## 💻 Hardware Environment & Offline Strategy
+
+**Target Hardware:** The empirical benchmarks published in this research were executed locally on **Apple Silicon (macOS)** utilizing system unified memory. 
+> ⚠️ *Disclaimer: The ~6-hour execution times and P50 latency metrics reflect this specific hardware. If you replicate these experiments on devices with differing RAM, GPU limits, or thermal constraints, your local execution duration will naturally vary.*
+
+**Why 100% Offline via Low-Compute Local LLMs?**
+1. **Data Sovereignty:** Modern enterprise BI deals with highly classified schemas, PII, and financial records. C2C ensures absolute zero-trust execution; no database queries or metadata ever traverse a cloud boundary (OpenAI, Anthropic, etc.).
+2. **Architectural Edge Supremacy:** It is academically trivial to achieve high accuracy by blindly throwing massive remote models (like GPT-4o) at a problem. This research explicitly forces a tiny **low-compute 3B parameter model** to perform at enterprise-tier execution accuracy. It proves that intelligent orchestrator scaffolding is mathematically superior to brute-forcing raw parameters.
+3. **Zero Marginal Inference Cost:** By proving reliability on edge devices, the financial barrier to scalable, continuous BI querying drops effectively to zero.
+
+---
+
 ## ⏱️ Execution & Time Estimates
 
 All computational workflows run completely offline and natively via `OllamaClient`, ensuring zero API costs and full data sovereignty. The mathematical threshold for an academically viable paper requires **4 mathematically independent multi-runs** to calculate strict standard deviation error bars.
