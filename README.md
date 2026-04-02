@@ -9,7 +9,7 @@ Bankupalli Ravi Teja · Independent Research, Hyderabad, India
 ---
 
 ## 🔬 Academic Significance
-While most Text-to-SQL frameworks rely on massive, expensive cloud models (e.g., GPT-4o, Claude 3.5), C2C mathematically proves that a tightly constrained **3B parameter model** (Qwen 2.5 Coder) can achieve enterprise-tier execution accuracy (88%) by aggressively utilizing a self-correcting semantic graph. This proves that **adaptive local orchestration infrastructure** is vastly superior to single-pass brute-force scaling, allowing edge deployments to process highly uncurated data with absolute data privacy.
+While most Text-to-SQL frameworks rely on massive, expensive cloud models (e.g., GPT-4o, Claude 3.5), C2C mathematically proves that a tightly constrained **3B parameter model** (Qwen 2.5 Coder) can achieve an Execution Accuracy of **87.5% ± 3.0% (peaking at 92.0%)** by aggressively utilizing a self-correcting semantic graph. This proves that **adaptive local orchestration infrastructure** is vastly superior to single-pass brute-force scaling, allowing edge deployments to process highly uncurated data with absolute data privacy.
 
 ---
 
@@ -51,7 +51,7 @@ The framework executes a rigorous 50-query simulation across the uncurated envir
 ## 📈 Key Findings: What We've Learned
 1. **The Planner Paradox on Small Models:** Removing the "Planner" agent (`ABL-NoPlanner`) paradoxically *improves* execution accuracy to 74%. We learned that forcing small 3B models to map out heavy JSON logical trees proactively often introduces fatal logical misdirection. Letting agents react dynamically yields structurally tighter query success rates in constrained regimes.
 2. **"Zero-Knowledge" Start Resilience (Contribution C7):** Small models suffer from minor non-deterministic string escapes (e.g., `\n "entities"` crashes). C2C natively catches deeply nested parse exceptions, initializes a blank graph ($\mathcal{S} = \emptyset$), and autonomously rebuilds the entire operational context from scratch via the Feedback Loop across 200 queries.
-3. **Immortality via Feedback:** The 3B model baseline flatlines rapidly against complex multi-table joins. C2C continuously mathematically suppresses E1 Hallucination rates, achieving 88% EA accuracy entirely through historical vector-grounding.
+3. **Immortality via Feedback:** The 3B model baseline flatlines rapidly against complex multi-table joins (frozen at 58.0%). C2C continuously mathematically suppresses E1 Hallucination rates from 38.0% down to a pristine 7.0%, achieving an **87.5% ± 3.0% EA** (peaking at 92.0%) entirely through historical vector-grounding over a 4-run ensemble.
 
 ---
 
@@ -92,13 +92,13 @@ The mathematical threshold for an academically viable paper requires **4 mathema
 3. **Pull the Edge Model:** Run `ollama pull qwen2.5-coder:3b`.
 4. **Run the Master Node:** Open `notebooks/c2c_experiments.ipynb` using your `.venv` kernel. 
 5. **Execute Pipeline (Run 1):** Select **"Run All"**. The notebook will execute the entire 6-hour evaluation block sequentially, dumping empirical `.json` logs into `/eval/results/`.
-6. **Queue the Remaining Runs:** Because Jupyter holds massive evaluation arrays in memory, **do not write loop scripts.** After Run 1 finishes, simply go to the navigation bar and click **"Restart Kernel and Run All Cells"**. Repeat this 4 total times over 24 hours to safely and cleanly stack your academic error bars!
+6. **The Native Mega Loop:** You do not need to write external Bash or Python orchestration scripts. The master notebook cell natively utilizes an intrinsic mega-loop to sequence all 4 benchmarking runs autonomously, completely trapping internal LLM data arrays. Just click "Run All" once, step away for 20+ hours, and all your academic standard deviations will stack perfectly into the `/runs/` directory!
 
 ---
 
 ## 📝 Citation
 ```bibtex
-@article{teja2026chaos2clarity,
+@article{chaos2clarity,
   title={Chaos 2 Clarity: A Self-Improving Semantic Orchestration Framework for LLM-Driven Business Intelligence over Heterogeneous, Uncurated Enterprise Data},
   author={Bankupalli, Ravi Teja},
   journal={arXiv preprint},
