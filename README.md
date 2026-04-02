@@ -56,8 +56,8 @@ The framework executes a rigorous 50-query simulation across the uncurated envir
 ---
 
 ## 💻 Hardware Environment & Offline Strategy
-**Target Hardware:** The empirical benchmarks published in this research were executed locally on **Apple Silicon (macOS)** utilizing system unified memory. 
-> ⚠️ *Disclaimer: The ~6-hour execution times reflect this specific hardware. Edge replication durations will naturally vary.*
+**Target Hardware:** The empirical benchmarks published in this research were natively executed on an **Apple MacBook Air M2 (8GB RAM)** utilizing system unified memory. 
+> ⚠️ *Cross-Platform Compatibility:* Because the C2C architecture natively leverages Python `duckdb`, `chromadb`, and the `ollama` engine, **this notebook is fully cross-platform and will dynamically run on any OS** (Windows, Linux, or Intel Macs). However, the ~6-hour empirical execution time is specific to the M2 chip. Reproducing this on an 8GB RAM machine natively proves the architecture's incredible memory stability without Out-Of-Memory (OOM) crashes. If you replicate these experiments on devices with differing limits or thermal constraints, your execution duration will naturally vary.
 
 **Why 100% Offline via Low-Compute Local LLMs?**
 * **Data Sovereignty:** No database queries or schemas ever traverse a cloud boundary.
