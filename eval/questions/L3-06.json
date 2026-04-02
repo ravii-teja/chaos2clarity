@@ -6,20 +6,84 @@
   "gold_result": {
     "rows": [
       {
-        "name": "Mallory Gonzales",
-        "total_rev": "7149.92"
+        "name": "Marie Christian",
+        "total_rev": "6470.79"
       },
       {
-        "name": "Mariah Robles",
-        "total_rev": "7288.19"
+        "name": "Michael Taylor",
+        "total_rev": "9802.56"
       },
       {
-        "name": "Heather Nunez",
-        "total_rev": "5602.56"
+        "name": "Russell Bailey",
+        "total_rev": "7441.73"
       },
       {
-        "name": "Dorothy Mclaughlin",
-        "total_rev": "5424.06"
+        "name": "Alex Hernandez",
+        "total_rev": "12360.71"
+      },
+      {
+        "name": "Amy Pena",
+        "total_rev": "8921.22"
+      },
+      {
+        "name": "Seth Davenport",
+        "total_rev": "6420.60"
+      },
+      {
+        "name": "Christy Johnson",
+        "total_rev": "9228.11"
+      },
+      {
+        "name": "Joel Allen",
+        "total_rev": "6729.04"
+      },
+      {
+        "name": "Jason Wolf",
+        "total_rev": "7123.76"
+      },
+      {
+        "name": "Patrick Bonilla",
+        "total_rev": "5468.48"
+      },
+      {
+        "name": "Brian Martin",
+        "total_rev": "19516.36"
+      },
+      {
+        "name": "Shannon Mccann",
+        "total_rev": "7714.53"
+      },
+      {
+        "name": "Sheryl Humphrey",
+        "total_rev": "6266.85"
+      },
+      {
+        "name": "Victoria Camacho",
+        "total_rev": "6778.67"
+      },
+      {
+        "name": "Sharon Martinez DVM",
+        "total_rev": "9116.75"
+      },
+      {
+        "name": "Mary Faulkner",
+        "total_rev": "5189.20"
+      },
+      {
+        "name": "Matthew Bush",
+        "total_rev": "9772.14"
+      },
+      {
+        "name": "Mary Ferguson",
+        "total_rev": "5252.90"
+      },
+      {
+        "name": "Megan Ballard",
+        "total_rev": "9095.39"
+      },
+      {
+        "name": "Jeffery Jenkins",
+        "total_rev": "5185.90"
       },
       {
         "name": "Angie Caldwell",
@@ -38,28 +102,32 @@
         "total_rev": "12381.50"
       },
       {
-        "name": "Crystal Sullivan",
-        "total_rev": "6180.70"
-      },
-      {
-        "name": "Mary Ferguson",
-        "total_rev": "5252.90"
-      },
-      {
-        "name": "Megan Ballard",
-        "total_rev": "9095.39"
-      },
-      {
-        "name": "Jeffery Jenkins",
-        "total_rev": "5185.90"
-      },
-      {
         "name": "Megan Joyce",
         "total_rev": "10924.64"
       },
       {
         "name": "Michael Lewis",
         "total_rev": "6377.85"
+      },
+      {
+        "name": "Mallory Gonzales",
+        "total_rev": "7149.92"
+      },
+      {
+        "name": "Mariah Robles",
+        "total_rev": "7288.19"
+      },
+      {
+        "name": "Heather Nunez",
+        "total_rev": "5602.56"
+      },
+      {
+        "name": "Dorothy Mclaughlin",
+        "total_rev": "5424.06"
+      },
+      {
+        "name": "Crystal Sullivan",
+        "total_rev": "6180.70"
       },
       {
         "name": "Richard Washington",
@@ -86,72 +154,32 @@
         "total_rev": "5743.01"
       },
       {
-        "name": "Brian Martin",
-        "total_rev": "19516.36"
+        "name": "Jeffrey Solomon",
+        "total_rev": "8186.02"
       },
       {
-        "name": "Shannon Mccann",
-        "total_rev": "7714.53"
+        "name": "Alejandro Martinez",
+        "total_rev": "6328.67"
       },
       {
-        "name": "Christy Johnson",
-        "total_rev": "9228.11"
+        "name": "Tina Stark",
+        "total_rev": "8443.75"
       },
       {
-        "name": "Joel Allen",
-        "total_rev": "6729.04"
+        "name": "Benjamin Welch",
+        "total_rev": "6029.60"
       },
       {
-        "name": "Jason Wolf",
-        "total_rev": "7123.76"
+        "name": "Brooke Jones",
+        "total_rev": "5290.91"
       },
       {
-        "name": "Marie Christian",
-        "total_rev": "6470.79"
+        "name": "Jonathan White",
+        "total_rev": "11487.45"
       },
       {
-        "name": "Michael Taylor",
-        "total_rev": "9802.56"
-      },
-      {
-        "name": "Russell Bailey",
-        "total_rev": "7441.73"
-      },
-      {
-        "name": "Alex Hernandez",
-        "total_rev": "12360.71"
-      },
-      {
-        "name": "Amy Pena",
-        "total_rev": "8921.22"
-      },
-      {
-        "name": "Seth Davenport",
-        "total_rev": "6420.60"
-      },
-      {
-        "name": "Patrick Bonilla",
-        "total_rev": "5468.48"
-      },
-      {
-        "name": "Sheryl Humphrey",
-        "total_rev": "6266.85"
-      },
-      {
-        "name": "Victoria Camacho",
-        "total_rev": "6778.67"
-      },
-      {
-        "name": "Sharon Martinez DVM",
-        "total_rev": "9116.75"
-      },
-      {
-        "name": "Mary Faulkner",
-        "total_rev": "5189.20"
-      },
-      {
-        "name": "Matthew Bush",
-        "total_rev": "9772.14"
+        "name": "James Poole",
+        "total_rev": "5063.31"
       },
       {
         "name": "Raymond Barber",
@@ -170,10 +198,6 @@
         "total_rev": "5736.31"
       },
       {
-        "name": "Tina Stark",
-        "total_rev": "8443.75"
-      },
-      {
         "name": "Mary May",
         "total_rev": "6407.55"
       },
@@ -184,30 +208,6 @@
       {
         "name": "Linda Goodman",
         "total_rev": "7755.48"
-      },
-      {
-        "name": "Jeffrey Solomon",
-        "total_rev": "8186.02"
-      },
-      {
-        "name": "Alejandro Martinez",
-        "total_rev": "6328.67"
-      },
-      {
-        "name": "Benjamin Welch",
-        "total_rev": "6029.60"
-      },
-      {
-        "name": "Brooke Jones",
-        "total_rev": "5290.91"
-      },
-      {
-        "name": "Jonathan White",
-        "total_rev": "11487.45"
-      },
-      {
-        "name": "James Poole",
-        "total_rev": "5063.31"
       },
       {
         "name": "Melanie Larson",
@@ -230,96 +230,36 @@
         "total_rev": "6293.81"
       },
       {
-        "name": "Jessica Reed",
-        "total_rev": "11486.33"
+        "name": "Heather Ellis",
+        "total_rev": "11241.58"
       },
       {
-        "name": "Daniel Pennington",
-        "total_rev": "5252.17"
+        "name": "Sara Caldwell",
+        "total_rev": "5731.54"
       },
       {
-        "name": "Erica Wilson",
-        "total_rev": "9130.45"
+        "name": "Katherine White",
+        "total_rev": "9452.57"
       },
       {
-        "name": "Stephanie Lee",
-        "total_rev": "5066.34"
+        "name": "Paul Sheppard",
+        "total_rev": "5387.70"
       },
       {
-        "name": "Haley Humphrey",
-        "total_rev": "12137.13"
+        "name": "Hunter Silva",
+        "total_rev": "10398.42"
       },
       {
-        "name": "Jennifer Perez",
-        "total_rev": "6902.69"
+        "name": "Amanda Johnson",
+        "total_rev": "5581.76"
       },
       {
-        "name": "Kristen Roberts",
-        "total_rev": "8250.24"
+        "name": "Kristen Salazar",
+        "total_rev": "10363.50"
       },
       {
-        "name": "Joshua Hernandez",
-        "total_rev": "6244.92"
-      },
-      {
-        "name": "Michael Powell",
-        "total_rev": "9539.16"
-      },
-      {
-        "name": "Alexa Evans",
-        "total_rev": "5101.17"
-      },
-      {
-        "name": "Todd Gregory",
-        "total_rev": "10230.86"
-      },
-      {
-        "name": "Maria Porter",
-        "total_rev": "5183.37"
-      },
-      {
-        "name": "Hunter Robinson",
-        "total_rev": "5813.03"
-      },
-      {
-        "name": "Matthew Guzman",
-        "total_rev": "7838.67"
-      },
-      {
-        "name": "Kelli Gomez",
-        "total_rev": "11991.37"
-      },
-      {
-        "name": "Jacob Lee",
-        "total_rev": "5864.38"
-      },
-      {
-        "name": "Deanna Smith",
-        "total_rev": "6987.68"
-      },
-      {
-        "name": "Stephanie Ellison",
-        "total_rev": "6077.51"
-      },
-      {
-        "name": "Matthew Padilla",
-        "total_rev": "7227.12"
-      },
-      {
-        "name": "Brian Garcia",
-        "total_rev": "5428.87"
-      },
-      {
-        "name": "Samantha Davis",
-        "total_rev": "7206.31"
-      },
-      {
-        "name": "Robert Barton",
-        "total_rev": "7560.62"
-      },
-      {
-        "name": "Amber Kim",
-        "total_rev": "7199.22"
+        "name": "Nicholas Grant",
+        "total_rev": "9142.26"
       },
       {
         "name": "Sara Jones",
@@ -354,44 +294,12 @@
         "total_rev": "5687.35"
       },
       {
-        "name": "Hunter Silva",
-        "total_rev": "10398.42"
-      },
-      {
-        "name": "Amanda Johnson",
-        "total_rev": "5581.76"
-      },
-      {
         "name": "Elizabeth James",
         "total_rev": "8671.38"
       },
       {
         "name": "Terri Kerr",
         "total_rev": "10448.82"
-      },
-      {
-        "name": "Heather Ellis",
-        "total_rev": "11241.58"
-      },
-      {
-        "name": "Sara Caldwell",
-        "total_rev": "5731.54"
-      },
-      {
-        "name": "Katherine White",
-        "total_rev": "9452.57"
-      },
-      {
-        "name": "Paul Sheppard",
-        "total_rev": "5387.70"
-      },
-      {
-        "name": "Kristen Salazar",
-        "total_rev": "10363.50"
-      },
-      {
-        "name": "Nicholas Grant",
-        "total_rev": "9142.26"
       },
       {
         "name": "Erica Moon",
@@ -416,6 +324,262 @@
       {
         "name": "Laura Walls",
         "total_rev": "6380.86"
+      },
+      {
+        "name": "Michael Powell",
+        "total_rev": "9539.16"
+      },
+      {
+        "name": "Alexa Evans",
+        "total_rev": "5101.17"
+      },
+      {
+        "name": "Todd Gregory",
+        "total_rev": "10230.86"
+      },
+      {
+        "name": "Maria Porter",
+        "total_rev": "5183.37"
+      },
+      {
+        "name": "Hunter Robinson",
+        "total_rev": "5813.03"
+      },
+      {
+        "name": "Stephanie Ellison",
+        "total_rev": "6077.51"
+      },
+      {
+        "name": "Matthew Padilla",
+        "total_rev": "7227.12"
+      },
+      {
+        "name": "Jessica Reed",
+        "total_rev": "11486.33"
+      },
+      {
+        "name": "Daniel Pennington",
+        "total_rev": "5252.17"
+      },
+      {
+        "name": "Erica Wilson",
+        "total_rev": "9130.45"
+      },
+      {
+        "name": "Stephanie Lee",
+        "total_rev": "5066.34"
+      },
+      {
+        "name": "Haley Humphrey",
+        "total_rev": "12137.13"
+      },
+      {
+        "name": "Jennifer Perez",
+        "total_rev": "6902.69"
+      },
+      {
+        "name": "Kristen Roberts",
+        "total_rev": "8250.24"
+      },
+      {
+        "name": "Joshua Hernandez",
+        "total_rev": "6244.92"
+      },
+      {
+        "name": "Matthew Guzman",
+        "total_rev": "7838.67"
+      },
+      {
+        "name": "Kelli Gomez",
+        "total_rev": "11991.37"
+      },
+      {
+        "name": "Jacob Lee",
+        "total_rev": "5864.38"
+      },
+      {
+        "name": "Deanna Smith",
+        "total_rev": "6987.68"
+      },
+      {
+        "name": "Brian Garcia",
+        "total_rev": "5428.87"
+      },
+      {
+        "name": "Samantha Davis",
+        "total_rev": "7206.31"
+      },
+      {
+        "name": "Robert Barton",
+        "total_rev": "7560.62"
+      },
+      {
+        "name": "Amber Kim",
+        "total_rev": "7199.22"
+      },
+      {
+        "name": "Victoria Romero",
+        "total_rev": "10429.16"
+      },
+      {
+        "name": "Michael Parker",
+        "total_rev": "5955.55"
+      },
+      {
+        "name": "Andrew Hughes",
+        "total_rev": "8153.12"
+      },
+      {
+        "name": "Raymond Oconnor",
+        "total_rev": "7111.42"
+      },
+      {
+        "name": "Natasha Williams",
+        "total_rev": "7107.39"
+      },
+      {
+        "name": "Sarah Johnson",
+        "total_rev": "8895.96"
+      },
+      {
+        "name": "John Mack",
+        "total_rev": "12226.09"
+      },
+      {
+        "name": "Rachel Taylor",
+        "total_rev": "8449.27"
+      },
+      {
+        "name": "Ann Weber",
+        "total_rev": "7377.85"
+      },
+      {
+        "name": "Jeremy Martinez",
+        "total_rev": "5308.22"
+      },
+      {
+        "name": "Curtis Taylor",
+        "total_rev": "5411.18"
+      },
+      {
+        "name": "Shannon English",
+        "total_rev": "5453.22"
+      },
+      {
+        "name": "James Martin",
+        "total_rev": "7111.84"
+      },
+      {
+        "name": "Jennifer Lewis",
+        "total_rev": "5334.87"
+      },
+      {
+        "name": "Phillip Underwood",
+        "total_rev": "8585.84"
+      },
+      {
+        "name": "Dakota Sandoval",
+        "total_rev": "7674.21"
+      },
+      {
+        "name": "Kelly Krueger",
+        "total_rev": "8985.65"
+      },
+      {
+        "name": "Joshua Petersen",
+        "total_rev": "6255.42"
+      },
+      {
+        "name": "Garrett Gibson",
+        "total_rev": "5549.42"
+      },
+      {
+        "name": "Diana Hays",
+        "total_rev": "6941.54"
+      },
+      {
+        "name": "Jennifer Wood",
+        "total_rev": "8555.25"
+      },
+      {
+        "name": "David Hall",
+        "total_rev": "5448.87"
+      },
+      {
+        "name": "Nathan Fuller",
+        "total_rev": "6713.82"
+      },
+      {
+        "name": "Amanda Nielsen",
+        "total_rev": "8142.08"
+      },
+      {
+        "name": "Michael Paul",
+        "total_rev": "12418.34"
+      },
+      {
+        "name": "Destiny Brown",
+        "total_rev": "11519.89"
+      },
+      {
+        "name": "Brooke Garcia",
+        "total_rev": "6861.12"
+      },
+      {
+        "name": "Casey Floyd",
+        "total_rev": "15710.48"
+      },
+      {
+        "name": "Jessica Hull",
+        "total_rev": "7136.98"
+      },
+      {
+        "name": "Autumn Torres",
+        "total_rev": "5359.30"
+      },
+      {
+        "name": "Tiffany Jackson",
+        "total_rev": "9940.58"
+      },
+      {
+        "name": "Nathan Chavez",
+        "total_rev": "9879.82"
+      },
+      {
+        "name": "Matthew Wright",
+        "total_rev": "6641.28"
+      },
+      {
+        "name": "Amanda Riggs",
+        "total_rev": "6276.82"
+      },
+      {
+        "name": "John Wilson",
+        "total_rev": "13757.44"
+      },
+      {
+        "name": "Robert Monroe",
+        "total_rev": "6908.67"
+      },
+      {
+        "name": "Dennis Williams",
+        "total_rev": "6858.01"
+      },
+      {
+        "name": "Ryan Morgan",
+        "total_rev": "5316.32"
+      },
+      {
+        "name": "Anthony Curtis",
+        "total_rev": "6467.93"
+      },
+      {
+        "name": "Kara Atkinson",
+        "total_rev": "5060.10"
+      },
+      {
+        "name": "Denise Moore",
+        "total_rev": "11623.90"
       },
       {
         "name": "Jordan Santiago",
@@ -450,18 +614,6 @@
         "total_rev": "7925.47"
       },
       {
-        "name": "Dennis Williams",
-        "total_rev": "6858.01"
-      },
-      {
-        "name": "Ryan Morgan",
-        "total_rev": "5316.32"
-      },
-      {
-        "name": "Anthony Curtis",
-        "total_rev": "6467.93"
-      },
-      {
         "name": "Julie Schwartz",
         "total_rev": "6858.29"
       },
@@ -478,164 +630,12 @@
         "total_rev": "5054.35"
       },
       {
-        "name": "Amanda Riggs",
-        "total_rev": "6276.82"
-      },
-      {
-        "name": "John Wilson",
-        "total_rev": "13757.44"
-      },
-      {
-        "name": "Robert Monroe",
-        "total_rev": "6908.67"
-      },
-      {
-        "name": "Kara Atkinson",
-        "total_rev": "5060.10"
-      },
-      {
-        "name": "Denise Moore",
-        "total_rev": "11623.90"
-      },
-      {
         "name": "Donna Shaffer",
         "total_rev": "6942.17"
       },
       {
         "name": "Kimberly Figueroa",
         "total_rev": "11025.02"
-      },
-      {
-        "name": "Natasha Williams",
-        "total_rev": "7107.39"
-      },
-      {
-        "name": "Sarah Johnson",
-        "total_rev": "8895.96"
-      },
-      {
-        "name": "John Mack",
-        "total_rev": "12226.09"
-      },
-      {
-        "name": "Rachel Taylor",
-        "total_rev": "8449.27"
-      },
-      {
-        "name": "Victoria Romero",
-        "total_rev": "10429.16"
-      },
-      {
-        "name": "Ann Weber",
-        "total_rev": "7377.85"
-      },
-      {
-        "name": "Jeremy Martinez",
-        "total_rev": "5308.22"
-      },
-      {
-        "name": "Curtis Taylor",
-        "total_rev": "5411.18"
-      },
-      {
-        "name": "Michael Parker",
-        "total_rev": "5955.55"
-      },
-      {
-        "name": "Andrew Hughes",
-        "total_rev": "8153.12"
-      },
-      {
-        "name": "Raymond Oconnor",
-        "total_rev": "7111.42"
-      },
-      {
-        "name": "Shannon English",
-        "total_rev": "5453.22"
-      },
-      {
-        "name": "James Martin",
-        "total_rev": "7111.84"
-      },
-      {
-        "name": "Jennifer Lewis",
-        "total_rev": "5334.87"
-      },
-      {
-        "name": "Phillip Underwood",
-        "total_rev": "8585.84"
-      },
-      {
-        "name": "Dakota Sandoval",
-        "total_rev": "7674.21"
-      },
-      {
-        "name": "Kelly Krueger",
-        "total_rev": "8985.65"
-      },
-      {
-        "name": "Michael Paul",
-        "total_rev": "12418.34"
-      },
-      {
-        "name": "Destiny Brown",
-        "total_rev": "11519.89"
-      },
-      {
-        "name": "Brooke Garcia",
-        "total_rev": "6861.12"
-      },
-      {
-        "name": "Jennifer Wood",
-        "total_rev": "8555.25"
-      },
-      {
-        "name": "Casey Floyd",
-        "total_rev": "15710.48"
-      },
-      {
-        "name": "Jessica Hull",
-        "total_rev": "7136.98"
-      },
-      {
-        "name": "Joshua Petersen",
-        "total_rev": "6255.42"
-      },
-      {
-        "name": "Garrett Gibson",
-        "total_rev": "5549.42"
-      },
-      {
-        "name": "Diana Hays",
-        "total_rev": "6941.54"
-      },
-      {
-        "name": "David Hall",
-        "total_rev": "5448.87"
-      },
-      {
-        "name": "Nathan Fuller",
-        "total_rev": "6713.82"
-      },
-      {
-        "name": "Amanda Nielsen",
-        "total_rev": "8142.08"
-      },
-      {
-        "name": "Autumn Torres",
-        "total_rev": "5359.30"
-      },
-      {
-        "name": "Tiffany Jackson",
-        "total_rev": "9940.58"
-      },
-      {
-        "name": "Nathan Chavez",
-        "total_rev": "9879.82"
-      },
-      {
-        "name": "Matthew Wright",
-        "total_rev": "6641.28"
       }
     ],
     "columns": [

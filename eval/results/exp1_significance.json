@@ -1,96 +1,96 @@
 {
   "C2C-Full_vs_B1-Direct_EA": {
-    "statistic": 5.0,
-    "p_value": 0.210113525390625,
+    "statistic": 7.0,
+    "p_value": 0.803619384765625,
     "p_value_chi2": null,
     "significant": "False",
     "table": [
       [
-        27,
-        11
+        25,
+        9
       ],
       [
-        5,
-        7
+        7,
+        9
       ]
     ],
     "n_discordant": 16,
-    "a_better": 11,
-    "b_better": 5
+    "a_better": 9,
+    "b_better": 7
   },
   "C2C-Full_vs_B1-Direct_RC": {
     "statistic": 2.0,
-    "p_value": 0.03857421875,
+    "p_value": 0.0224609375,
     "p_value_chi2": null,
     "significant": "True",
     "table": [
       [
         7,
-        10
+        11
       ],
       [
         2,
-        31
+        30
       ]
     ],
-    "n_discordant": 12,
-    "a_better": 10,
+    "n_discordant": 13,
+    "a_better": 11,
     "b_better": 2
   },
   "C2C-Full_vs_B1-Direct_latency": {
     "statistic": 2500.0,
     "p_value": 7.066071930388932e-18,
     "significant": "True",
-    "median_a": 48821.29956250026,
-    "median_b": 3318.7939999999685,
-    "mean_a": 50796.98618592002,
-    "mean_b": 3488.9196850000008
+    "median_a": 33319.772479000676,
+    "median_b": 1231.6058954966138,
+    "mean_a": 34739.712409959466,
+    "mean_b": 1286.7106583391433
   },
   "C2C-Full_vs_B2-SchemaAware_EA": {
-    "statistic": 6.0,
-    "p_value": 0.332305908203125,
+    "statistic": 9.0,
+    "p_value": 1.0,
     "p_value_chi2": null,
-    "significant": "False",
+    "significant": false,
     "table": [
       [
-        27,
-        11
-      ],
-      [
-        6,
-        6
-      ]
-    ],
-    "n_discordant": 17,
-    "a_better": 11,
-    "b_better": 6
-  },
-  "C2C-Full_vs_B2-SchemaAware_RC": {
-    "statistic": 3.0,
-    "p_value": 0.09228515625,
-    "p_value_chi2": null,
-    "significant": "False",
-    "table": [
-      [
-        7,
+        24,
         10
       ],
       [
-        3,
+        9,
+        7
+      ]
+    ],
+    "n_discordant": 19,
+    "a_better": 10,
+    "b_better": 9
+  },
+  "C2C-Full_vs_B2-SchemaAware_RC": {
+    "statistic": 2.0,
+    "p_value": 0.0224609375,
+    "p_value_chi2": null,
+    "significant": "True",
+    "table": [
+      [
+        7,
+        11
+      ],
+      [
+        2,
         30
       ]
     ],
     "n_discordant": 13,
-    "a_better": 10,
-    "b_better": 3
+    "a_better": 11,
+    "b_better": 2
   },
   "C2C-Full_vs_B2-SchemaAware_latency": {
     "statistic": 2500.0,
     "p_value": 7.066071930388932e-18,
     "significant": "True",
-    "median_a": 48821.29956250026,
-    "median_b": 3385.324416499998,
-    "mean_a": 50796.98618592002,
-    "mean_b": 3491.6995875000225
+    "median_a": 33319.772479000676,
+    "median_b": 1303.6571460033883,
+    "mean_a": 34739.712409959466,
+    "mean_b": 1290.2345165598672
   }
 }

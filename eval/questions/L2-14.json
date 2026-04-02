@@ -18,12 +18,12 @@
         "avg_items": 5.0085858585858585
       },
       {
-        "category": "Food",
-        "avg_items": 4.963977676306444
-      },
-      {
         "category": "Clothing",
         "avg_items": 4.9907120743034055
+      },
+      {
+        "category": "Food",
+        "avg_items": 4.963977676306444
       }
     ],
     "columns": [
