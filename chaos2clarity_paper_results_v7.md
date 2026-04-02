@@ -819,18 +819,12 @@ Learning rate α sensitivity analysis over {0.05, 0.10, 0.15, 0.20, 0.30} on 20-
 
 
 ---
-
-## Pre-Submission Checklist
-
-- [x] Create GitHub repository; push code, prompts, gold question suite → `github.com/ravii-teja/chaos2clarity`
-- [x] Run all eight experiments; fill all result tables
-- [x] Reframe hypothesis around self-improvement (v6)
-- [x] Complete runs 3–4 for multi-run error bars
-- [x] Add mean ± std to Experiment 5 table
-- [x] Replace reference [11] with dbt Labs citation
-- [x] Generate publication figures (learning curve, κ convergence, error taxonomy bar chart)
-- [x] Fill Appendix F (α sensitivity) from validation run
-- [x] Verify all 34 references are unique (no duplicates)
-- [ ] Convert to LaTeX (acmart format) for arXiv submission
-- [ ] Test LaTeX compilation: `pdflatex → bibtex → pdflatex → pdflatex`
-- [ ] Domain expert review before submission
+## 📝 Citation
+```bibtex
+@article{chaos2clarity,
+  title={Chaos 2 Clarity: A Self-Improving Semantic Orchestration Framework for LLM-Driven Business Intelligence over Heterogeneous, Uncurated Enterprise Data},
+  author={Bankupalli, Ravi Teja},
+  journal={arXiv preprint},
+  year={2026}
+}
+```
