@@ -4,7 +4,7 @@
 Independent Research, Hyderabad, India
 Profiles: [GitHub](https://github.com/ravii-teja/chaos2clarity) | [LinkedIn](https://www.linkedin.com/in/raviiteja/)
 
-> **arXiv target:** cs.AI (primary), cs.DB (secondary) · **Paper type:** System paper with experimental evaluation
+> **arXiv target:** cs.AI · **Paper type:** System paper with experimental evaluation
 
 ---
 

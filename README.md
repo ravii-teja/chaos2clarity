@@ -4,7 +4,7 @@
 
 Bankupalli Ravi Teja · Independent Research, Hyderabad, India
 
-> arXiv: cs.AI (primary), cs.DB (secondary)
+> arXiv: cs.AI
 
 ---
 
