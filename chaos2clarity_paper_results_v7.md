@@ -810,10 +810,10 @@ Learning rate α sensitivity analysis over {0.05, 0.10, 0.15, 0.20, 0.30} on 20-
 | 0.10 | 77.8% | 22.2% | 685s |
 | 0.15 | 77.8% | 16.7% | 645s |
 | **0.20 (optimal limit)** | **100.0%** | **0.0%** | **527s** |
+| 0.30 | 100.0% | 0.0% | 955s |
 
 ![Hyperparameter Sensitivity Analysis](figures/appendix_f_alpha_sensitivity.png)
 *Figure 7. Performance and latency trade-off across the α decay parameter sweep.*
-| 0.30 | 100.0% | 0.0% | 955s |
 
 *Conclusion:* An algorithmic decay weight of `α = 0.20` stands as the optimal hyperparameter profile, forcing the `Qwen-2.5 3B` framework to structurally unlearn hallucination dependencies entirely (0.0% E1) while maximizing convergence velocity (100% Validation Hit Rate at the lowest gross runtime).*
 
@@ -828,9 +828,9 @@ Learning rate α sensitivity analysis over {0.05, 0.10, 0.15, 0.20, 0.30} on 20-
 - [x] Complete runs 3–4 for multi-run error bars
 - [x] Add mean ± std to Experiment 5 table
 - [x] Replace reference [11] with dbt Labs citation
-- [ ] Generate publication figures (learning curve, κ convergence, error taxonomy bar chart)
+- [x] Generate publication figures (learning curve, κ convergence, error taxonomy bar chart)
 - [x] Fill Appendix F (α sensitivity) from validation run
-- [ ] Verify all 34 references are unique (no duplicates)
+- [x] Verify all 34 references are unique (no duplicates)
 - [ ] Convert to LaTeX (acmart format) for arXiv submission
 - [ ] Test LaTeX compilation: `pdflatex → bibtex → pdflatex → pdflatex`
 - [ ] Domain expert review before submission
