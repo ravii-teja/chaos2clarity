@@ -280,7 +280,7 @@ ABL-NoSynth $\equiv \mathfrak{B}_3$; ABL-Mono (monolithic LLM + full $\mathcal{S
 ## Experiment 1: Baseline vs. C2C (Primary Proof)
 
 Figure 2 and Table 5 present the primary results. C2C-Full achieves 66% overall EA—a **+6 pp** improvement over $\mathfrak{B}_1$ (60%). While modest in single-pass EA, **result correctness nearly doubles** (RC: 16% $\to$ 30%, McNemar’s test $p{=}0.039$, statistically significant). C2C dominates on structured queries: L1 EA 86.7% vs. 60% ($\mathfrak{B}_1$), L2 EA 86.7% vs. 80%. On L3 cross-source and L4 RAG queries, $\mathfrak{B}_2$ matches or exceeds C2C’s single-pass score—however, C2C’s self-improvement loop (Exp. 5) recovers this gap over deployment time.
-
+![Experiment 1: Primary Results by Query Tier](figures/fig1_main_results.pdf)
 
 Experiment 1: Single-pass EA and RC by query tier (Qwen 2.5 Coder 3B, n = 50 questions). C2C-Full leads on structured tiers (L1+L2) and achieves statistically significant RC improvement overall (p = 0.039). L3 EA is 20% for all systems at this model scale; the feedback loop (Experiment 5) recovers gains over time. Note: C2C latency is 17× higher than baselines (P50: 51 s vs. 3 s) due to multi-stage pipeline.
 
@@ -300,7 +300,7 @@ Experiment 1: Main results. Bold = best per column. All systems use Qwen 2.5 C
 
 Figure 3 shows semantic synthesis quality and the impact of Mechanism I. The automated semantic synthesis achieves **100% coverage** across all entity, metric, and cross-source relationship categories (Table 6). Initial $\kappa$ values range from 0.11–0.61; after 200 queries the five most-queried entities converge to $\kappa \in
 [0.61, 0.79]$, empirically validating Proposition 2. The “Deal” entity (never queried) remains at $\kappa{=}0.14$—expected behavior, not a limitation. E5 (cross-source failure) drops from 12–16% in baselines to 8% at $T{=}50$ and 2% at $T{=}200$, confirming progressive suppression by Mechanism I + the feedback loop.
-
+![Experiment 2: Semantic Synthesis Quality and κ Convergence](figures/fig6_semantic_quality.pdf)
 
 Experiment 2: (a) Semantic synthesis coverage — full 100% recovery of all gold entities, metrics, and cross-source relationships; (b) κ convergence for the five most-queried entities (initial range 0.11–0.61 converges to 0.61–0.79 by T = 200), empirically confirming Proposition 2. Dashed line marks θexec = 0.75.
 
@@ -322,7 +322,7 @@ Experiment 2: Semantic synthesis quality and $\kappa$ convergence.
 ## Experiment 3: Agent Ablation Study
 
 Figure 4 and Table 7 reveal the key unexpected finding of this evaluation: **ABL-NoPlanner (74% EA) outperforms C2C-Full (66% EA)**. This reveals a *model-capacity-dependent effect*: at 3B parameters, the Planner generates plans that mislead the downstream SQL generator more often than they help. We predict this effect reverses with models ≥30B parameters, where reliable structured plan generation is feasible. Pipeline decomposition still provides +6 pp EA and +8 pp RC over ABL-Mono (monolithic LLM + $\mathcal{S}$), confirming that multi-stage processing adds value beyond the semantic layer alone. ABL-NoRetry yields $-$2 pp RC vs. C2C-Full, confirming that error-informed re-generation recovers some failures.
-
+![Experiment 3: Ablation Study (EA/RC and Latency)](figures/fig4_ablation.pdf)
 
 Experiment 3: Ablation. (Top) EA/RC per variant; (Bottom) P50 latency. Key finding: ABL-NoPlanner (74%) exceeds C2C-Full (66%) at 3B model scale, revealing a model-capacity-dependent Planner regression. Latencies reflect 4–6 sequential LLM calls at ≈5 s each.
 
@@ -362,8 +362,7 @@ Figure 5 (left) shows learning curves over 200 queries (4 batches of 50, 4 inde
 ## Experiment 6: Vector Grounding Impact
 
 Figure 5 (right) compares first-pass EA for C2C-Full and ABL-NoVector, both starting from an empty $\mathcal{V}$. ABL-NoVector is *completely flat* at 50% throughout all 200 queries—zero improvement from feedback alone. By $T{=}100$, C2C-Full leads by **+32 pp** (82% vs. 50%), far exceeding the predicted ≥8 pp. By $T{=}200$ the gap reaches **+37 pp** (87% vs. 50%), confirming the vector store as the sole driver of first-pass accuracy gains.
-
-
+![Experiments 5 & 6: Learning Curve and Vector Grounding Impact](figures/fig3_learning_grounding.pdf)
 Experiments 5 (left) and 6 (right). Left: C2C-Full improves from 74.0% ± 3.5 to 87.5% ± 3.0 over 200 queries (+29.5 pp vs. frozen baseline); ABL-NoFeedback flat at 58.0% ± 0.0 (deterministic). Right: ABL-NoVector stays flat at 50% throughout; C2C-Full reaches +37 pp advantage by T = 200 as 𝒱 accumulates verified patterns.
 
 
@@ -380,7 +379,7 @@ Experiments 5 & 6: Learning curve (EA, mean $\pm$ std, 4 runs) and vector gr
 ## Experiment 7: Error Taxonomy Distribution
 
 Figure 6 and Table 10 show the error distribution. By $T{=}200$, all major error classes are near-zero: E1 drops from 24% to **7.0%**, E2 from 36% to **3.5%**, E5 from 8% to **2.0%**, yielding an 87.5% no-error rate. This represents a qualitatively different outcome from $T{=}50$ (66% no-error) and confirms that the combined effect of vector grounding and feedback refinement suppresses *all* error classes simultaneously, not just E1. E3 remains 0% throughout (9-table schema is too small to generate join-path failures at this scale).
-
+![Experiment 7: Error Taxonomy Distribution Over Time](figures/fig2_error_taxonomy.pdf)
 
 Experiment 7: Error taxonomy across systems and over time. By T = 200 C2C-Full achieves 87.5% no-error rate with all residual classes near-zero (≤7%). This demonstrates that the four-mechanism design collectively suppresses each error class rather than trading one for another.
 
@@ -400,7 +399,7 @@ Experiment 7: Error distribution (% of all 50 queries). By T=200, all error clas
 ## Experiment 8: Latency–Accuracy Tradeoff
 
 Figure 7 and Table 11 characterize the deployment cost. C2C-Full incurs a **17$\times$ latency premium** (≈51 s vs. ≈3 s) for +6 pp single-pass EA and +14 pp RC over $\mathfrak{B}_1$. This overhead is driven by 4–6 sequential LLM calls at ≈5 s each on a local 3B model; production deployment with dedicated hardware or larger batch inference would substantially reduce this. The *cumulative* tradeoff is far more favorable: at $T{=}200$, C2C-Full reaches 88% EA vs. 60% for the frozen baseline—**+28 pp** at identical latency.
-
+![Experiment 8: Latency–Accuracy Pareto Frontier](figures/fig5_latency_pareto.pdf)
 
 Experiment 8: Latency–accuracy. C2C-Full at T = 200 (88% EA, green star) represents the best cumulative operating point; the single-pass point (66% EA, blue circle) shows 17× overhead for modest initial gain. Baselines respond in ≈3 s; C2C in ≈51 s (local 3B model).
 
