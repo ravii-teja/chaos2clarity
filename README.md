@@ -8,7 +8,7 @@
 
 Bankupalli Ravi Teja · Independent Research, Hyderabad, India
 
-> arXiv: cs.AI
+
 > 
 > [Research Paper on Zenodo](https://zenodo.org/records/19414309)
 
